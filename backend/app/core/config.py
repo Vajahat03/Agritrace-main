@@ -50,6 +50,7 @@ class Settings(BaseSettings):
     GEMINI_API_KEY: str = Field(default="", description="Google Gemini API key")
     GEMINI_MODEL: str = Field(default="gemini-3.8-flash", description="Gemini model identifier")
     NEWS_API_KEY: str = Field(default="", description="News API key for agricultural topics")
+    AI_SERVICE_URL: str = Field(default="https://vajahat03-agritrace-vision-ai.hf.space", description="Hugging Face Space URL for DenseNet-121 Vision AI")
 
     model_config = SettingsConfigDict(
         env_file=(

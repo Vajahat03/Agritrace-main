@@ -3,10 +3,13 @@ AgriTrace Vision Agent
 Perceives produce type, freshness grade, defect risk, and generates Grad-CAM heatmaps.
 """
 
+import logging
 from typing import Dict, Any
 from PIL import Image
 from agents.base_agent import BaseAgent
 from ai.version_registry import MODEL_VERSIONS
+
+logger = logging.getLogger("agritrace.ai.vision_agent")
 
 class VisionAgent(BaseAgent):
     def __init__(self):
@@ -35,21 +38,53 @@ class VisionAgent(BaseAgent):
                 "evidence": [f"Simulated perception: {produce_type} quality score 72.0/100."]
             }
 
+        # 1. Try local DenseNet-121 model (runs on localhost when PyTorch is present)
         try:
             from ai.vision.inference import run_vision_pipeline
             vision_res = run_vision_pipeline(image)
-        except Exception as e:
-            produce_type = state.get("produce_type", "tomato")
-            vision_res = {
-                "produce_type": produce_type,
-                "freshness_grade": "moderately_fresh",
-                "quality_score": 75.0,
-                "defect_type": "none",
-                "defect_probability": 0.05,
-                "confidence": 0.90,
-                "status": "SUCCESS",
-                "message": f"Processed with heuristic fallback: {e}"
-            }
+        except Exception as local_err:
+            logger.info("Local PyTorch model unavailable (%s); routing to Hugging Face DenseNet-121...", local_err)
+            vision_res = None
+
+            # 2. Query Hugging Face Space hosting the exact same agritrace_vision_d121_best.pt model
+            import os
+            ai_url = os.environ.get("AI_SERVICE_URL", "https://vajahat03-agritrace-vision-ai.hf.space")
+            if ai_url:
+                try:
+                    import tempfile
+                    from gradio_client import Client, handle_file
+
+                    fd, tmp_path = tempfile.mkstemp(suffix=".jpg")
+                    os.close(fd)
+                    try:
+                        image.convert("RGB").save(tmp_path, format="JPEG")
+                        client = Client(ai_url)
+                        res = client.predict(image=handle_file(tmp_path), api_name="/predict_produce")
+                        if isinstance(res, dict) and res.get("status") == "SUCCESS":
+                            vision_res = res
+                            logger.info("Received real DenseNet-121 inference from Hugging Face Space: %s", res)
+                    finally:
+                        if os.path.exists(tmp_path):
+                            try:
+                                os.remove(tmp_path)
+                            except Exception:
+                                pass
+                except Exception as remote_err:
+                    logger.error("Hugging Face vision service connection error: %s", remote_err, exc_info=True)
+
+            # 3. Fallback only if both local and remote are unreachable
+            if not vision_res:
+                produce_type = state.get("produce_type", "tomato")
+                vision_res = {
+                    "produce_type": produce_type,
+                    "freshness_grade": "moderately_fresh",
+                    "quality_score": 75.0,
+                    "defect_type": "none",
+                    "defect_probability": 0.05,
+                    "confidence": 0.90,
+                    "status": "SUCCESS",
+                    "message": "Processed with heuristic fallback"
+                }
 
         if vision_res.get("status") != "SUCCESS":
             return {
