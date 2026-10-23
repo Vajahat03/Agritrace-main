@@ -1,0 +1,53 @@
+{
+  "filename": "shelf life prediction dataset.xlsx.csv",
+  "sha256": "d30663ca50d45c40025f61aa8fa925ae3d68e714a1c1a143543ef74c4b67f1af",
+  "rows": 50000,
+  "columns": [
+    "produce_type",
+    "freshness_score",
+    "quality_score",
+    "defect_probability",
+    "temperature_c",
+    "humidity_rh",
+    "harvest_age_days",
+    "storage_type",
+    "remaining_shelf_life_days"
+  ],
+  "dtypes": {
+    "produce_type": "str",
+    "freshness_score": "float64",
+    "quality_score": "float64",
+    "defect_probability": "float64",
+    "temperature_c": "float64",
+    "humidity_rh": "float64",
+    "harvest_age_days": "float64",
+    "storage_type": "str",
+    "remaining_shelf_life_days": "float64"
+  },
+  "missing_values": {
+    "produce_type": 0,
+    "freshness_score": 0,
+    "quality_score": 0,
+    "defect_probability": 0,
+    "temperature_c": 0,
+    "humidity_rh": 0,
+    "harvest_age_days": 0,
+    "storage_type": 0,
+    "remaining_shelf_life_days": 0
+  },
+  "exact_duplicate_rows": 0,
+  "predictor_combinations_unique": 50000,
+  "target": {
+    "count": 50000,
+    "minimum": 0.5,
+    "maximum": 133.47,
+    "mean": 8.515354199999999,
+    "median": 4.28,
+    "std_sample": 11.411589417517748,
+    "q1": 1.08,
+    "q3": 10.62,
+    "equal_0_5": 8634,
+    "less_0_5": 0,
+    "equal_1_0": 48
+  }
+}

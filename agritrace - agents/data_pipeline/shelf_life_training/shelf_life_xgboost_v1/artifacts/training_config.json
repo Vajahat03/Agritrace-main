@@ -1,0 +1,106 @@
+{
+  "dataset_filename": "shelf life prediction dataset.xlsx.csv",
+  "dataset_sha256": "d30663ca50d45c40025f61aa8fa925ae3d68e714a1c1a143543ef74c4b67f1af",
+  "dataset_row_count": 50000,
+  "feature_list": [
+    "produce_type",
+    "freshness_score",
+    "quality_score",
+    "defect_probability",
+    "temperature_c",
+    "humidity_rh",
+    "harvest_age_days",
+    "storage_type"
+  ],
+  "target": "remaining_shelf_life_days",
+  "split_percentages": {
+    "train": 70,
+    "validation": 15,
+    "test": 15
+  },
+  "split_counts": {
+    "train": 34999,
+    "validation": 7501,
+    "test": 7500
+  },
+  "split_method": "two-stage shuffled train_test_split; fixed seed",
+  "random_seed": 42,
+  "python_version": "3.12.10",
+  "xgboost_version": "3.4.1",
+  "pandas_version": "3.0.6",
+  "scikit_learn_version": "1.9.1",
+  "hyperparameters": {
+    "n_estimators": 900,
+    "max_depth": 7,
+    "learning_rate": 0.035,
+    "subsample": 0.9,
+    "colsample_bytree": 0.9,
+    "min_child_weight": 3,
+    "reg_lambda": 1.0,
+    "objective": "reg:squarederror",
+    "eval_metric": "rmse",
+    "random_state": 42,
+    "n_jobs": 4,
+    "tree_method": "hist"
+  },
+  "candidate_validation_results": [
+    {
+      "hyperparameters": {
+        "n_estimators": 700,
+        "max_depth": 5,
+        "learning_rate": 0.04,
+        "subsample": 0.9,
+        "colsample_bytree": 0.9,
+        "min_child_weight": 3,
+        "reg_lambda": 1.0
+      },
+      "mae": 1.5565997846070379,
+      "rmse": 2.506306309349025,
+      "r2": 0.9512075659031823
+    },
+    {
+      "hyperparameters": {
+        "n_estimators": 900,
+        "max_depth": 7,
+        "learning_rate": 0.035,
+        "subsample": 0.9,
+        "colsample_bytree": 0.9,
+        "min_child_weight": 3,
+        "reg_lambda": 1.0
+      },
+      "mae": 1.5080243918932987,
+      "rmse": 2.4762742891846186,
+      "r2": 0.9523698788326567
+    },
+    {
+      "hyperparameters": {
+        "n_estimators": 600,
+        "max_depth": 4,
+        "learning_rate": 0.05,
+        "subsample": 0.85,
+        "colsample_bytree": 0.85,
+        "min_child_weight": 5,
+        "reg_lambda": 2.0
+      },
+      "mae": 1.623871263270951,
+      "rmse": 2.5954251153508485,
+      "r2": 0.9476759688922288
+    }
+  ],
+  "preprocessing": {
+    "categorical": "OneHotEncoder(handle_unknown='ignore', sparse_output=True)",
+    "numeric": "passthrough; no scaling",
+    "column_order": [
+      "produce_type",
+      "freshness_score",
+      "quality_score",
+      "defect_probability",
+      "temperature_c",
+      "humidity_rh",
+      "harvest_age_days",
+      "storage_type"
+    ]
+  },
+  "training_timestamp_utc": "2026-09-25T16:32:40.838052+00:00",
+  "model_version": "shelf_life_xgboost_v1"
+}

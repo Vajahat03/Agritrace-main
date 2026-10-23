@@ -1,0 +1,60 @@
+{
+  "model_loading": "PASS",
+  "preprocessor_loading": "PASS",
+  "feature_manifest_loading": "PASS",
+  "prediction_wrapper": "PASS",
+  "10_example_inference": "PASS",
+  "all_predictions_finite": true,
+  "examples": [
+    {
+      "actual_shelf_life_days": 11.49,
+      "predicted_shelf_life_days": 10.255696513194389,
+      "absolute_error_days": 1.2343034868056115
+    },
+    {
+      "actual_shelf_life_days": 6.17,
+      "predicted_shelf_life_days": 6.673870023752953,
+      "absolute_error_days": 0.5038700237529534
+    },
+    {
+      "actual_shelf_life_days": 0.5,
+      "predicted_shelf_life_days": 0.7694944956577119,
+      "absolute_error_days": 0.2694944956577119
+    },
+    {
+      "actual_shelf_life_days": 7.62,
+      "predicted_shelf_life_days": 7.378245164225497,
+      "absolute_error_days": 0.24175483577450319
+    },
+    {
+      "actual_shelf_life_days": 0.7,
+      "predicted_shelf_life_days": 0.7843160257097341,
+      "absolute_error_days": 0.08431602570973418
+    },
+    {
+      "actual_shelf_life_days": 1.84,
+      "predicted_shelf_life_days": 1.264068076441896,
+      "absolute_error_days": 0.5759319235581042
+    },
+    {
+      "actual_shelf_life_days": 0.71,
+      "predicted_shelf_life_days": 0.8659026021372513,
+      "absolute_error_days": 0.15590260213725138
+    },
+    {
+      "actual_shelf_life_days": 2.99,
+      "predicted_shelf_life_days": 3.191252481650663,
+      "absolute_error_days": 0.20125248165066267
+    },
+    {
+      "actual_shelf_life_days": 0.5,
+      "predicted_shelf_life_days": 0.6554520221109086,
+      "absolute_error_days": 0.15545202211090858
+    },
+    {
+      "actual_shelf_life_days": 0.5,
+      "predicted_shelf_life_days": 0.7948242647581523,
+      "absolute_error_days": 0.29482426475815227
+    }
+  ]
+}

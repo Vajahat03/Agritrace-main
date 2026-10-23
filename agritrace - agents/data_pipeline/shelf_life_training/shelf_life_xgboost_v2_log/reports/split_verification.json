@@ -1,0 +1,17 @@
+{
+  "procedure": "V1 two-stage shuffled train_test_split; seed 42",
+  "counts": {
+    "train": 34999,
+    "validation": 7501,
+    "test": 7500
+  },
+  "same_v1_test_rows": true,
+  "same_v1_train_membership": true,
+  "same_v1_validation_membership": true,
+  "ordered_index_sha256": {
+    "train": "ef799acb4f025abe0f47bc16111d3b0563a686ba710ba053929a550f4f57b303",
+    "validation": "aca70a5f80bfa8154deaa9f1de267aab683cc2f42e5b90ed37c4f33bbe701f54",
+    "test": "780d6fae8d7a641834b0b343e094ccca4e12732b141d6ae7bed708dba2cb323b"
+  },
+  "v1_method": "two-stage shuffled train_test_split; fixed seed"
+}

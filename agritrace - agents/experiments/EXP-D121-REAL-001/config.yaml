@@ -1,0 +1,54 @@
+data:
+  random_seed: 42
+  test_split: 0.15
+  train_split: 0.7
+  use_synthetic: false
+  val_split: 0.15
+early_stopping:
+  min_delta: 0.001
+  patience: 6
+image:
+  normalization:
+    mean:
+    - 0.485
+    - 0.456
+    - 0.406
+    std:
+    - 0.229
+    - 0.224
+    - 0.225
+  size: 224
+loss:
+  defect_weight: 1.0
+  freshness_weight: 1.2
+  produce_weight: 1.0
+  quality_weight: 0.8
+model:
+  architecture: densenet121
+  embedding_dim: 1024
+  name: AgriTrace Vision-D121
+  num_defect_classes: 6
+  num_freshness_classes: 4
+  num_produce_classes: 9
+  pretrained: true
+optimizer:
+  name: AdamW
+paths:
+  checkpoints_dir: models/vision
+  experiments_dir: experiments
+  metadata: data/metadata/agritrace_labels.csv
+  reports_dir: reports
+scheduler:
+  eta_min: 1.0e-06
+  name: cosine
+  t_max: 20
+training:
+  batch_size: 32
+  epochs_stage1: 2
+  epochs_stage2: 3
+  learning_rate_backbone: 2.0e-05
+  learning_rate_head: 0.001
+  max_batches_per_epoch: 120
+  mixed_precision: true
+  num_workers: 0
+  weight_decay: 0.0001

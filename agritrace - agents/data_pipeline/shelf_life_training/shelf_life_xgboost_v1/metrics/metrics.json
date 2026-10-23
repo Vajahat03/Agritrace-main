@@ -1,0 +1,517 @@
+{
+  "overall": {
+    "mae": 1.5703231511376101,
+    "rmse": 2.631259444435344,
+    "r2": 0.9505678597519449
+  },
+  "excluding_0_5_day": {
+    "mae": 1.6720004015561738,
+    "rmse": 2.7725088517104757,
+    "r2": 0.9494665740123244
+  },
+  "0_5_day_group": {
+    "count": 1313,
+    "mae": 1.091208795966511,
+    "rmse": 1.8239713760436802,
+    "mean_prediction": 1.588585615158081,
+    "median_prediction": 1.0267401933670044,
+    "min_prediction": -0.09280489385128021,
+    "max_prediction": 18.831682205200195
+  },
+  "error_analysis": {
+    "median_absolute_error": 0.8389102220535279,
+    "maximum_absolute_error": 23.585469818115236,
+    "within_abs_error_days": {
+      "0.5": 34.14666666666666,
+      "1": 55.52,
+      "2": 76.25333333333333,
+      "3": 85.74666666666667
+    }
+  },
+  "validation_candidates": [
+    {
+      "hyperparameters": {
+        "n_estimators": 700,
+        "max_depth": 5,
+        "learning_rate": 0.04,
+        "subsample": 0.9,
+        "colsample_bytree": 0.9,
+        "min_child_weight": 3,
+        "reg_lambda": 1.0
+      },
+      "mae": 1.5565997846070379,
+      "rmse": 2.506306309349025,
+      "r2": 0.9512075659031823
+    },
+    {
+      "hyperparameters": {
+        "n_estimators": 900,
+        "max_depth": 7,
+        "learning_rate": 0.035,
+        "subsample": 0.9,
+        "colsample_bytree": 0.9,
+        "min_child_weight": 3,
+        "reg_lambda": 1.0
+      },
+      "mae": 1.5080243918932987,
+      "rmse": 2.4762742891846186,
+      "r2": 0.9523698788326567
+    },
+    {
+      "hyperparameters": {
+        "n_estimators": 600,
+        "max_depth": 4,
+        "learning_rate": 0.05,
+        "subsample": 0.85,
+        "colsample_bytree": 0.85,
+        "min_child_weight": 5,
+        "reg_lambda": 2.0
+      },
+      "mae": 1.623871263270951,
+      "rmse": 2.5954251153508485,
+      "r2": 0.9476759688922288
+    }
+  ],
+  "selected_validation_candidate_index": 1,
+  "worst_10_test_predictions": [
+    {
+      "actual": 27.65,
+      "predicted": 51.235469818115234,
+      "absolute_error": 23.585469818115236,
+      "produce_type": "Garlic",
+      "storage_type": "Cold Storage"
+    },
+    {
+      "actual": 74.47,
+      "predicted": 50.94868850708008,
+      "absolute_error": 23.52131149291992,
+      "produce_type": "Garlic",
+      "storage_type": "Refrigerated"
+    },
+    {
+      "actual": 55.86,
+      "predicted": 33.508968353271484,
+      "absolute_error": 22.351031646728515,
+      "produce_type": "Garlic",
+      "storage_type": "Controlled Atmosphere"
+    },
+    {
+      "actual": 89.12,
+      "predicted": 67.60809326171875,
+      "absolute_error": 21.511906738281255,
+      "produce_type": "Garlic",
+      "storage_type": "Cold Storage"
+    },
+    {
+      "actual": 43.86,
+      "predicted": 64.85224914550781,
+      "absolute_error": 20.992249145507813,
+      "produce_type": "Garlic",
+      "storage_type": "Refrigerated"
+    },
+    {
+      "actual": 2.45,
+      "predicted": 23.046789169311523,
+      "absolute_error": 20.596789169311524,
+      "produce_type": "Ginger",
+      "storage_type": "Refrigerated"
+    },
+    {
+      "actual": 23.34,
+      "predicted": 41.756778717041016,
+      "absolute_error": 18.416778717041016,
+      "produce_type": "Garlic",
+      "storage_type": "Cold Storage"
+    },
+    {
+      "actual": 0.5,
+      "predicted": 18.831682205200195,
+      "absolute_error": 18.331682205200195,
+      "produce_type": "Garlic",
+      "storage_type": "Refrigerated"
+    },
+    {
+      "actual": 21.08,
+      "predicted": 3.378201961517334,
+      "absolute_error": 17.701798038482664,
+      "produce_type": "Garlic",
+      "storage_type": "Room Temperature"
+    },
+    {
+      "actual": 75.08,
+      "predicted": 57.89508056640625,
+      "absolute_error": 17.18491943359375,
+      "produce_type": "Garlic",
+      "storage_type": "Refrigerated"
+    }
+  ],
+  "10_test_examples": [
+    {
+      "produce_type": "Watermelon",
+      "freshness_score": 81.19,
+      "quality_score": 90.93,
+      "defect_probability": 0.511,
+      "temperature_c": 1.46,
+      "humidity_rh": 98.0,
+      "harvest_age_days": 3.94,
+      "storage_type": "Controlled Atmosphere",
+      "actual": 11.49,
+      "predicted": 9.884032249450684,
+      "absolute_error": 1.6059677505493166
+    },
+    {
+      "produce_type": "Tomato",
+      "freshness_score": 91.45,
+      "quality_score": 87.93,
+      "defect_probability": 0.4031,
+      "temperature_c": 5.56,
+      "humidity_rh": 84.78,
+      "harvest_age_days": 0.72,
+      "storage_type": "Refrigerated",
+      "actual": 6.17,
+      "predicted": 6.6135945320129395,
+      "absolute_error": 0.4435945320129395
+    },
+    {
+      "produce_type": "Tomato",
+      "freshness_score": 71.21,
+      "quality_score": 64.96,
+      "defect_probability": 0.6064,
+      "temperature_c": 24.42,
+      "humidity_rh": 35.0,
+      "harvest_age_days": 2.76,
+      "storage_type": "Room Temperature",
+      "actual": 0.5,
+      "predicted": 0.8620700836181641,
+      "absolute_error": 0.36207008361816406
+    },
+    {
+      "produce_type": "Pomegranate",
+      "freshness_score": 53.1,
+      "quality_score": 58.38,
+      "defect_probability": 0.5746,
+      "temperature_c": 2.11,
+      "humidity_rh": 88.32,
+      "harvest_age_days": 11.24,
+      "storage_type": "Cold Storage",
+      "actual": 7.62,
+      "predicted": 8.479265213012695,
+      "absolute_error": 0.8592652130126952
+    },
+    {
+      "produce_type": "Grapes",
+      "freshness_score": 66.68,
+      "quality_score": 75.62,
+      "defect_probability": 0.7222,
+      "temperature_c": 26.75,
+      "humidity_rh": 40.29,
+      "harvest_age_days": 4.77,
+      "storage_type": "Room Temperature",
+      "actual": 0.7,
+      "predicted": 0.9258074760437012,
+      "absolute_error": 0.22580747604370122
+    },
+    {
+      "produce_type": "Grapes",
+      "freshness_score": 67.0,
+      "quality_score": 68.21,
+      "defect_probability": 0.6359,
+      "temperature_c": 25.94,
+      "humidity_rh": 41.68,
+      "harvest_age_days": 1.84,
+      "storage_type": "Room Temperature",
+      "actual": 1.84,
+      "predicted": 1.2444944381713867,
+      "absolute_error": 0.5955055618286134
+    },
+    {
+      "produce_type": "Spinach",
+      "freshness_score": 78.81,
+      "quality_score": 77.07,
+      "defect_probability": 0.6275,
+      "temperature_c": 23.18,
+      "humidity_rh": 47.46,
+      "harvest_age_days": 2.07,
+      "storage_type": "Room Temperature",
+      "actual": 0.71,
+      "predicted": 0.8332411050796509,
+      "absolute_error": 0.12324110507965091
+    },
+    {
+      "produce_type": "Guava",
+      "freshness_score": 75.73,
+      "quality_score": 84.8,
+      "defect_probability": 0.5622,
+      "temperature_c": 3.67,
+      "humidity_rh": 73.87,
+      "harvest_age_days": 4.76,
+      "storage_type": "Refrigerated",
+      "actual": 2.99,
+      "predicted": 3.244629383087158,
+      "absolute_error": 0.254629383087158
+    },
+    {
+      "produce_type": "Banana",
+      "freshness_score": 45.0,
+      "quality_score": 58.07,
+      "defect_probability": 0.8514,
+      "temperature_c": 25.73,
+      "humidity_rh": 55.98,
+      "harvest_age_days": 9.4,
+      "storage_type": "Room Temperature",
+      "actual": 0.5,
+      "predicted": 0.6493225693702698,
+      "absolute_error": 0.14932256937026978
+    },
+    {
+      "produce_type": "Spinach",
+      "freshness_score": 65.3,
+      "quality_score": 63.45,
+      "defect_probability": 0.7347,
+      "temperature_c": 21.21,
+      "humidity_rh": 39.62,
+      "harvest_age_days": 4.52,
+      "storage_type": "Room Temperature",
+      "actual": 0.5,
+      "predicted": 0.7174079418182373,
+      "absolute_error": 0.2174079418182373
+    }
+  ],
+  "feature_importance": {
+    "top_transformed_features": [
+      {
+        "feature": "categorical__produce_type_Garlic",
+        "gain": 7819.10107421875
+      },
+      {
+        "feature": "categorical__produce_type_Ginger",
+        "gain": 3469.7587890625
+      },
+      {
+        "feature": "categorical__produce_type_Onion",
+        "gain": 3297.59716796875
+      },
+      {
+        "feature": "categorical__produce_type_Pomegranate",
+        "gain": 2889.604248046875
+      },
+      {
+        "feature": "numeric__defect_probability",
+        "gain": 1795.0338134765625
+      },
+      {
+        "feature": "categorical__produce_type_Lemon",
+        "gain": 1774.144287109375
+      },
+      {
+        "feature": "categorical__produce_type_Cabbage",
+        "gain": 1478.11669921875
+      },
+      {
+        "feature": "categorical__produce_type_Apple",
+        "gain": 1317.6893310546875
+      },
+      {
+        "feature": "categorical__produce_type_Brinjal",
+        "gain": 1280.419189453125
+      },
+      {
+        "feature": "categorical__produce_type_Tomato",
+        "gain": 1118.57177734375
+      },
+      {
+        "feature": "categorical__storage_type_Controlled Atmosphere",
+        "gain": 1069.572265625
+      },
+      {
+        "feature": "categorical__storage_type_Refrigerated",
+        "gain": 1022.5472412109375
+      },
+      {
+        "feature": "categorical__produce_type_Guava",
+        "gain": 917.882568359375
+      },
+      {
+        "feature": "categorical__produce_type_Spinach",
+        "gain": 768.6904296875
+      },
+      {
+        "feature": "categorical__produce_type_Potato",
+        "gain": 672.4102783203125
+      },
+      {
+        "feature": "categorical__produce_type_Okra",
+        "gain": 612.4290161132812
+      },
+      {
+        "feature": "categorical__produce_type_Orange",
+        "gain": 565.9558715820312
+      },
+      {
+        "feature": "categorical__produce_type_Mango",
+        "gain": 461.0774841308594
+      },
+      {
+        "feature": "categorical__produce_type_Cauliflower",
+        "gain": 410.35760498046875
+      },
+      {
+        "feature": "numeric__temperature_c",
+        "gain": 383.5428771972656
+      },
+      {
+        "feature": "categorical__produce_type_Banana",
+        "gain": 377.9781494140625
+      },
+      {
+        "feature": "categorical__produce_type_Carrot",
+        "gain": 302.4956970214844
+      },
+      {
+        "feature": "numeric__humidity_rh",
+        "gain": 276.20635986328125
+      },
+      {
+        "feature": "categorical__storage_type_Cold Storage",
+        "gain": 272.1600341796875
+      },
+      {
+        "feature": "categorical__produce_type_Papaya",
+        "gain": 254.48524475097656
+      }
+    ],
+    "aggregated_logical_features": [
+      {
+        "feature": "produce_type",
+        "gain": 30606.442951202393,
+        "gain_share": 0.8483576422122463
+      },
+      {
+        "feature": "storage_type",
+        "gain": 2532.9724044799805,
+        "gain_share": 0.07020961241002038
+      },
+      {
+        "feature": "defect_probability",
+        "gain": 1795.0338134765625,
+        "gain_share": 0.049755231475940215
+      },
+      {
+        "feature": "temperature_c",
+        "gain": 383.5428771972656,
+        "gain_share": 0.010631144935893002
+      },
+      {
+        "feature": "humidity_rh",
+        "gain": 276.20635986328125,
+        "gain_share": 0.007655962392991343
+      },
+      {
+        "feature": "freshness_score",
+        "gain": 245.29957580566406,
+        "gain_share": 0.006799279814970525
+      },
+      {
+        "feature": "harvest_age_days",
+        "gain": 149.91287231445312,
+        "gain_share": 0.0041553254357824245
+      },
+      {
+        "feature": "quality_score",
+        "gain": 87.87710571289062,
+        "gain_share": 0.002435801322155779
+      }
+    ],
+    "importance_type": "gain; interpretive only, not causal"
+  },
+  "dataset_validation": {
+    "filename": "shelf life prediction dataset.xlsx.csv",
+    "sha256": "d30663ca50d45c40025f61aa8fa925ae3d68e714a1c1a143543ef74c4b67f1af",
+    "rows": 50000,
+    "columns": [
+      "produce_type",
+      "freshness_score",
+      "quality_score",
+      "defect_probability",
+      "temperature_c",
+      "humidity_rh",
+      "harvest_age_days",
+      "storage_type",
+      "remaining_shelf_life_days"
+    ],
+    "missing_values_per_column": {
+      "produce_type": 0,
+      "freshness_score": 0,
+      "quality_score": 0,
+      "defect_probability": 0,
+      "temperature_c": 0,
+      "humidity_rh": 0,
+      "harvest_age_days": 0,
+      "storage_type": 0,
+      "remaining_shelf_life_days": 0
+    },
+    "exact_duplicate_rows": 0,
+    "duplicate_percentage": 0.0,
+    "target": {
+      "min": 0.5,
+      "max": 133.47,
+      "mean": 8.515354199999999,
+      "median": 4.28,
+      "std": 11.411589417517748,
+      "quartiles": {
+        "q1": 1.08,
+        "q2": 4.28,
+        "q3": 10.62
+      },
+      "equal_0_5_count": 8634,
+      "equal_0_5_percent": 17.268,
+      "most_common_values": [
+        {
+          "value": 0.5,
+          "count": 8634
+        },
+        {
+          "value": 1.51,
+          "count": 85
+        },
+        {
+          "value": 0.8,
+          "count": 84
+        },
+        {
+          "value": 0.63,
+          "count": 81
+        },
+        {
+          "value": 0.74,
+          "count": 80
+        },
+        {
+          "value": 0.65,
+          "count": 80
+        },
+        {
+          "value": 0.75,
+          "count": 79
+        },
+        {
+          "value": 0.84,
+          "count": 78
+        },
+        {
+          "value": 0.62,
+          "count": 76
+        },
+        {
+          "value": 1.39,
+          "count": 76
+        }
+      ]
+    }
+  },
+  "split_counts": {
+    "train": 34999,
+    "validation": 7501,
+    "test": 7500
+  }
+}

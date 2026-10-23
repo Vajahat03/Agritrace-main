@@ -1,0 +1,22 @@
+﻿[PASS] Project directory - D:\agritrace d
+[PASS] File/folder exists - D:\agritrace d\backend
+[PASS] File/folder exists - D:\agritrace d\frontend
+[PASS] File/folder exists - D:\agritrace d\frontend\package.json
+[PASS] File/folder exists - D:\agritrace d\backend\requirements.txt
+[WARN] Port 3000 listener - No listener detected
+[WARN] Port 5000 listener - No listener detected
+[WARN] Port 8000 listener - No listener detected
+[FAIL] Backend health endpoint - URL http://127.0.0.1:5000/api/v1/health; Unable to connect to the remote server
+[FAIL] FastAPI OpenAPI schema - URL http://127.0.0.1:5000/openapi.json; Unable to connect to the remote server
+[WARN] FastAPI schema - OpenAPI may be disabled or use another URL
+[FAIL] Backend root - URL http://127.0.0.1:5000/; Unable to connect to the remote server
+[FAIL] Backend docs - URL http://127.0.0.1:5000/docs; Unable to connect to the remote server
+[FAIL] Next.js frontend - URL http://127.0.0.1:3000/; Unable to connect to the remote server
+[PASS] Environment file - D:\agritrace d\backend\.env exists
+[PASS] Environment file - D:\agritrace d\frontend\.env.local exists
+[PASS] Configuration key MONGODB_URI - Found in an environment file
+[PASS] Configuration key FIREBASE_PROJECT_ID - Found in an environment file
+[PASS] Configuration key NEXT_PUBLIC_API_URL - Found in an environment file
+[PASS] Backend pytest suite - All executed tests passed
+[PASS] Frontend test suite - Command completed successfully
+[PASS] Frontend production build - Build succeeded

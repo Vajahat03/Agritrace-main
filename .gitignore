@@ -1,0 +1,78 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build Outputs
+dist/
+.next/
+out/
+build/
+*.tsbuildinfo
+
+# Environment files & Secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+
+# Keep example env files
+!.env.example
+!frontend/.env.example
+!backend/.env.example
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Python / AI / Virtual Envs
+__pycache__/
+*.py[cod]
+*$py.class
+# Virtual Envs & Runtimes
+.venv/
+.venv*/
+*/.venv/
+*/.venv*/
+*/**/.venv/
+*/**/.venv*/
+venv/
+env/
+.runtime/
+*/.runtime/
+*/**/.runtime/
+uv-cache/
+*/**/uv-cache/
+scratch/
+
+# Model binaries & Large weights
+*.pkl
+*.h5
+*.pt
+*.pth
+*.bin
+*.weights
+*.onnx
+
+# Datasets and archives
+agritrace - agents/data/
+datasets/*
+!datasets/README.md
+data/
+*.zip
+*.rar
+*.7z
+*.parquet
+
+# Redundant nested repo
+frontend/agritrace - agents/
+
+# IDE & OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

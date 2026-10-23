@@ -1,0 +1,43 @@
+{
+  "audit_timestamp": "2026-09-05T12:51:12Z",
+  "total_images_detected": 34235,
+  "usable_images": 34234,
+  "corrupted_images": 1,
+  "duplicate_images": 76,
+  "synthetic_images": 0,
+  "total_specimens": 3668,
+  "splits": {
+    "train": 24051,
+    "validation": 5310,
+    "test": 4873
+  },
+  "produce_class_distribution": {
+    "Unknown": 19173,
+    "Banana": 5458,
+    "Orange": 4270,
+    "Apple": 4153,
+    "Tomato": 1180
+  },
+  "freshness_grade_distribution": {
+    "Fresh": 17055,
+    "Spoiled": 11508,
+    "Moderately Fresh": 5063,
+    "Missing": 608
+  },
+  "defect_type_distribution": {
+    "Missing": 21291,
+    "None": 12335,
+    "Other": 608
+  },
+  "quality_score_coverage": {
+    "annotated_samples": 34234,
+    "missing_samples": 0,
+    "coverage_percent": 100.0
+  },
+  "leakage_verification": {
+    "train_val_specimen_overlap": 0,
+    "train_test_specimen_overlap": 0,
+    "val_test_specimen_overlap": 0,
+    "status": "VERIFIED_ZERO_LEAKAGE"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "agritrace",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix frontend run dev",
+    "dev:all": "node scripts/dev.js",
+    "dev:backend": "python -m uvicorn app.main:app --host 127.0.0.1 --port 5000 --app-dir backend --reload",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "test": "npm --prefix frontend test -- --run",
+    "test:backend": "pytest backend/tests",
+    "build": "npm --prefix frontend run build",
+    "start": "npm --prefix frontend run start"
+  }
+}

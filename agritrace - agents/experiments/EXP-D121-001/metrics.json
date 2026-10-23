@@ -1,0 +1,107 @@
+[
+  {
+    "epoch": 1,
+    "train_loss": 8.5487,
+    "val_loss": 14.4149,
+    "val_produce_acc": 16.67,
+    "val_freshness_acc": 50.0
+  },
+  {
+    "epoch": 2,
+    "train_loss": 7.2021,
+    "val_loss": 16.0887,
+    "val_produce_acc": 16.67,
+    "val_freshness_acc": 50.0
+  },
+  {
+    "epoch": 3,
+    "train_loss": 10.0661,
+    "val_loss": 14.9155,
+    "val_produce_acc": 16.67,
+    "val_freshness_acc": 50.0
+  },
+  {
+    "epoch": 4,
+    "train_loss": 9.7483,
+    "val_loss": 13.6594,
+    "val_produce_acc": 25.0,
+    "val_freshness_acc": 50.0
+  },
+  {
+    "epoch": 5,
+    "train_loss": 6.6518,
+    "val_loss": 13.2454,
+    "val_produce_acc": 25.0,
+    "val_freshness_acc": 50.0
+  },
+  {
+    "epoch": 6,
+    "train_loss": 6.2716,
+    "val_loss": 11.7112,
+    "val_produce_acc": 41.67,
+    "val_freshness_acc": 50.0
+  },
+  {
+    "epoch": 7,
+    "train_loss": 5.8254,
+    "val_loss": 11.4021,
+    "val_produce_acc": 25.0,
+    "val_freshness_acc": 50.0
+  },
+  {
+    "epoch": 8,
+    "train_loss": 5.7727,
+    "val_loss": 12.3788,
+    "val_produce_acc": 33.33,
+    "val_freshness_acc": 50.0
+  },
+  {
+    "epoch": 9,
+    "train_loss": 14.627,
+    "val_loss": 12.7497,
+    "val_produce_acc": 25.0,
+    "val_freshness_acc": 50.0
+  },
+  {
+    "epoch": 10,
+    "train_loss": 9.7519,
+    "val_loss": 11.9541,
+    "val_produce_acc": 16.67,
+    "val_freshness_acc": 50.0
+  },
+  {
+    "epoch": 11,
+    "train_loss": 6.5324,
+    "val_loss": 11.3493,
+    "val_produce_acc": 16.67,
+    "val_freshness_acc": 50.0
+  },
+  {
+    "epoch": 12,
+    "train_loss": 4.8308,
+    "val_loss": 11.706,
+    "val_produce_acc": 25.0,
+    "val_freshness_acc": 50.0
+  },
+  {
+    "epoch": 13,
+    "train_loss": 5.8295,
+    "val_loss": 11.9982,
+    "val_produce_acc": 16.67,
+    "val_freshness_acc": 50.0
+  },
+  {
+    "epoch": 14,
+    "train_loss": 6.1243,
+    "val_loss": 11.7188,
+    "val_produce_acc": 16.67,
+    "val_freshness_acc": 50.0
+  },
+  {
+    "epoch": 15,
+    "train_loss": 4.9131,
+    "val_loss": 11.6194,
+    "val_produce_acc": 25.0,
+    "val_freshness_acc": 50.0
+  }
+]

@@ -1,0 +1,1655 @@
+{
+  "dataset": {
+    "path": "C:\\Users\\Vajahat Shaikh\\OneDrive\\Desktop\\agritrace - agents\\shelf life prediction dataset.xlsx.csv",
+    "file_size_bytes": 3098794,
+    "sha256": "d30663ca50d45c40025f61aa8fa925ae3d68e714a1c1a143543ef74c4b67f1af",
+    "rows": 50000,
+    "columns": [
+      "produce_type",
+      "freshness_score",
+      "quality_score",
+      "defect_probability",
+      "temperature_c",
+      "humidity_rh",
+      "harvest_age_days",
+      "storage_type",
+      "remaining_shelf_life_days"
+    ],
+    "dtypes": {
+      "produce_type": "str",
+      "freshness_score": "float64",
+      "quality_score": "float64",
+      "defect_probability": "float64",
+      "temperature_c": "float64",
+      "humidity_rh": "float64",
+      "harvest_age_days": "float64",
+      "storage_type": "str",
+      "remaining_shelf_life_days": "float64"
+    },
+    "missing": {
+      "produce_type": 0,
+      "freshness_score": 0,
+      "quality_score": 0,
+      "defect_probability": 0,
+      "temperature_c": 0,
+      "humidity_rh": 0,
+      "harvest_age_days": 0,
+      "storage_type": 0,
+      "remaining_shelf_life_days": 0
+    },
+    "exact_duplicate_rows": 0,
+    "exact_duplicate_feature_vectors": 0,
+    "first_10": [
+      {
+        "produce_type": "Peas",
+        "freshness_score": 79.72,
+        "quality_score": 87.61,
+        "defect_probability": 0.5608,
+        "temperature_c": 22.13,
+        "humidity_rh": 56.07,
+        "harvest_age_days": 1.02,
+        "storage_type": "Room Temperature",
+        "remaining_shelf_life_days": 1.94
+      },
+      {
+        "produce_type": "Apple",
+        "freshness_score": 76.84,
+        "quality_score": 74.93,
+        "defect_probability": 0.4728,
+        "temperature_c": 24.79,
+        "humidity_rh": 48.22,
+        "harvest_age_days": 2.34,
+        "storage_type": "Room Temperature",
+        "remaining_shelf_life_days": 10.58
+      },
+      {
+        "produce_type": "Pomegranate",
+        "freshness_score": 76.36,
+        "quality_score": 72.34,
+        "defect_probability": 0.3307,
+        "temperature_c": 4.72,
+        "humidity_rh": 78.6,
+        "harvest_age_days": 5.65,
+        "storage_type": "Refrigerated",
+        "remaining_shelf_life_days": 28.6
+      },
+      {
+        "produce_type": "Banana",
+        "freshness_score": 75.69,
+        "quality_score": 85.49,
+        "defect_probability": 0.6121,
+        "temperature_c": 21.26,
+        "humidity_rh": 45.32,
+        "harvest_age_days": 3.45,
+        "storage_type": "Room Temperature",
+        "remaining_shelf_life_days": 0.5
+      },
+      {
+        "produce_type": "Cabbage",
+        "freshness_score": 79.15,
+        "quality_score": 79.55,
+        "defect_probability": 0.444,
+        "temperature_c": 5.79,
+        "humidity_rh": 92.16,
+        "harvest_age_days": 4.62,
+        "storage_type": "Cold Storage",
+        "remaining_shelf_life_days": 25.09
+      },
+      {
+        "produce_type": "Brinjal",
+        "freshness_score": 59.11,
+        "quality_score": 67.81,
+        "defect_probability": 0.7261,
+        "temperature_c": 32.91,
+        "humidity_rh": 42.87,
+        "harvest_age_days": 4.46,
+        "storage_type": "Open Market",
+        "remaining_shelf_life_days": 0.5
+      },
+      {
+        "produce_type": "Okra",
+        "freshness_score": 72.92,
+        "quality_score": 74.9,
+        "defect_probability": 0.5606,
+        "temperature_c": 22.48,
+        "humidity_rh": 45.42,
+        "harvest_age_days": 3.4,
+        "storage_type": "Room Temperature",
+        "remaining_shelf_life_days": 0.5
+      },
+      {
+        "produce_type": "Cauliflower",
+        "freshness_score": 74.4,
+        "quality_score": 74.98,
+        "defect_probability": 0.4609,
+        "temperature_c": 6.39,
+        "humidity_rh": 98.0,
+        "harvest_age_days": 3.7,
+        "storage_type": "Controlled Atmosphere",
+        "remaining_shelf_life_days": 11.59
+      },
+      {
+        "produce_type": "Grapes",
+        "freshness_score": 94.65,
+        "quality_score": 96.1,
+        "defect_probability": 0.419,
+        "temperature_c": 7.09,
+        "humidity_rh": 87.11,
+        "harvest_age_days": 0.5,
+        "storage_type": "Cold Storage",
+        "remaining_shelf_life_days": 13.39
+      },
+      {
+        "produce_type": "Okra",
+        "freshness_score": 68.6,
+        "quality_score": 67.34,
+        "defect_probability": 0.647,
+        "temperature_c": 26.41,
+        "humidity_rh": 54.13,
+        "harvest_age_days": 3.05,
+        "storage_type": "Room Temperature",
+        "remaining_shelf_life_days": 1.04
+      }
+    ],
+    "last_10": [
+      {
+        "produce_type": "Carrot",
+        "freshness_score": 84.86,
+        "quality_score": 78.48,
+        "defect_probability": 0.4097,
+        "temperature_c": 8.62,
+        "humidity_rh": 84.15,
+        "harvest_age_days": 1.42,
+        "storage_type": "Refrigerated",
+        "remaining_shelf_life_days": 17.24
+      },
+      {
+        "produce_type": "Banana",
+        "freshness_score": 59.1,
+        "quality_score": 69.42,
+        "defect_probability": 0.8732,
+        "temperature_c": 33.85,
+        "humidity_rh": 35.0,
+        "harvest_age_days": 4.33,
+        "storage_type": "Open Market",
+        "remaining_shelf_life_days": 0.5
+      },
+      {
+        "produce_type": "Garlic",
+        "freshness_score": 61.5,
+        "quality_score": 69.3,
+        "defect_probability": 0.6765,
+        "temperature_c": 26.85,
+        "humidity_rh": 47.0,
+        "harvest_age_days": 5.53,
+        "storage_type": "Room Temperature",
+        "remaining_shelf_life_days": 0.96
+      },
+      {
+        "produce_type": "Potato",
+        "freshness_score": 80.55,
+        "quality_score": 81.27,
+        "defect_probability": 0.298,
+        "temperature_c": 3.36,
+        "humidity_rh": 82.72,
+        "harvest_age_days": 2.14,
+        "storage_type": "Refrigerated",
+        "remaining_shelf_life_days": 24.34
+      },
+      {
+        "produce_type": "Grapes",
+        "freshness_score": 73.85,
+        "quality_score": 61.16,
+        "defect_probability": 0.6123,
+        "temperature_c": 22.34,
+        "humidity_rh": 35.0,
+        "harvest_age_days": 3.01,
+        "storage_type": "Room Temperature",
+        "remaining_shelf_life_days": 0.5
+      },
+      {
+        "produce_type": "Tomato",
+        "freshness_score": 85.37,
+        "quality_score": 83.11,
+        "defect_probability": 0.4251,
+        "temperature_c": 1.15,
+        "humidity_rh": 71.09,
+        "harvest_age_days": 2.09,
+        "storage_type": "Refrigerated",
+        "remaining_shelf_life_days": 5.32
+      },
+      {
+        "produce_type": "Cucumber",
+        "freshness_score": 92.06,
+        "quality_score": 96.31,
+        "defect_probability": 0.3296,
+        "temperature_c": 4.34,
+        "humidity_rh": 98.0,
+        "harvest_age_days": 1.29,
+        "storage_type": "Controlled Atmosphere",
+        "remaining_shelf_life_days": 15.99
+      },
+      {
+        "produce_type": "Chilli",
+        "freshness_score": 83.48,
+        "quality_score": 82.82,
+        "defect_probability": 0.4773,
+        "temperature_c": 2.79,
+        "humidity_rh": 98.0,
+        "harvest_age_days": 4.51,
+        "storage_type": "Controlled Atmosphere",
+        "remaining_shelf_life_days": 11.78
+      },
+      {
+        "produce_type": "Potato",
+        "freshness_score": 34.03,
+        "quality_score": 53.5,
+        "defect_probability": 0.857,
+        "temperature_c": 23.8,
+        "humidity_rh": 38.96,
+        "harvest_age_days": 12.74,
+        "storage_type": "Room Temperature",
+        "remaining_shelf_life_days": 0.57
+      },
+      {
+        "produce_type": "Apple",
+        "freshness_score": 61.02,
+        "quality_score": 49.92,
+        "defect_probability": 0.6777,
+        "temperature_c": 29.96,
+        "humidity_rh": 36.7,
+        "harvest_age_days": 3.15,
+        "storage_type": "Open Market",
+        "remaining_shelf_life_days": 2.5
+      }
+    ]
+  },
+  "target": {
+    "count": 50000,
+    "min": 0.5,
+    "q25": 1.08,
+    "median": 4.28,
+    "q75": 10.62,
+    "max": 133.47,
+    "mean": 8.515354199999999,
+    "std_sample": 11.411589417517748,
+    "quartiles": {
+      "q25": 1.08,
+      "q50": 4.28,
+      "q75": 10.62
+    },
+    "unique_values": 4774,
+    "equal_0_5": 8634,
+    "percent_equal_0_5": 17.268,
+    "range_counts_half_open": {
+      "below_1": 11968,
+      "1_to_lt_3": 9223,
+      "3_to_lt_7": 10656,
+      "7_to_lt_14": 8487,
+      "14_to_lt_30": 6627,
+      "30_to_60_inclusive": 2760,
+      "above_60": 279
+    },
+    "decimal_digits": {
+      "1": 12633,
+      "2": 37367
+    },
+    "most_repeated_values": [
+      {
+        "value": 0.5,
+        "count": 8634
+      },
+      {
+        "value": 1.51,
+        "count": 85
+      },
+      {
+        "value": 0.8,
+        "count": 84
+      },
+      {
+        "value": 0.63,
+        "count": 81
+      },
+      {
+        "value": 0.74,
+        "count": 80
+      },
+      {
+        "value": 0.65,
+        "count": 80
+      },
+      {
+        "value": 0.75,
+        "count": 79
+      },
+      {
+        "value": 0.84,
+        "count": 78
+      },
+      {
+        "value": 0.62,
+        "count": 76
+      },
+      {
+        "value": 1.39,
+        "count": 76
+      },
+      {
+        "value": 0.83,
+        "count": 76
+      },
+      {
+        "value": 1.05,
+        "count": 75
+      },
+      {
+        "value": 1.04,
+        "count": 74
+      },
+      {
+        "value": 1.15,
+        "count": 74
+      },
+      {
+        "value": 0.9,
+        "count": 73
+      }
+    ]
+  },
+  "correlations": {
+    "freshness_score": {
+      "pearson": 0.36571422664772973,
+      "spearman": 0.5013866066017527
+    },
+    "quality_score": {
+      "pearson": 0.28950255487921916,
+      "spearman": 0.447509581681309
+    },
+    "defect_probability": {
+      "pearson": -0.6226989334382366,
+      "spearman": -0.7726673023349165
+    },
+    "temperature_c": {
+      "pearson": -0.5258168177693565,
+      "spearman": -0.6836108686449975
+    },
+    "humidity_rh": {
+      "pearson": 0.5279146967767654,
+      "spearman": 0.6986470681433806
+    },
+    "harvest_age_days": {
+      "pearson": -0.1380841345791341,
+      "spearman": -0.14241778217044757
+    }
+  },
+  "produce": {
+    "Apple": {
+      "sample_count": 2006,
+      "shelf_life_mean": 15.301001994017945,
+      "shelf_life_median": 10.614999999999998,
+      "shelf_life_min": 0.5,
+      "shelf_life_max": 62.89,
+      "mean_freshness_score": 73.32559322033899,
+      "mean_quality_score": 69.56950149551345,
+      "mean_defect_probability": 0.46881704885343967,
+      "mean_temperature_c": 14.823130608175472,
+      "mean_humidity_rh": 65.04063808574277,
+      "mean_harvest_age_days": 4.000458624127617
+    },
+    "Banana": {
+      "sample_count": 2055,
+      "shelf_life_mean": 3.19094403892944,
+      "shelf_life_median": 2.11,
+      "shelf_life_min": 0.5,
+      "shelf_life_max": 12.09,
+      "mean_freshness_score": 73.66741119221412,
+      "mean_quality_score": 76.33877372262774,
+      "mean_defect_probability": 0.6020144525547445,
+      "mean_temperature_c": 14.817163017031632,
+      "mean_humidity_rh": 65.13749391727494,
+      "mean_harvest_age_days": 3.9477907542579076
+    },
+    "Brinjal": {
+      "sample_count": 2079,
+      "shelf_life_mean": 3.325266955266955,
+      "shelf_life_median": 2.36,
+      "shelf_life_min": 0.5,
+      "shelf_life_max": 13.76,
+      "mean_freshness_score": 73.86314093314095,
+      "mean_quality_score": 75.35943241943242,
+      "mean_defect_probability": 0.5712803751803751,
+      "mean_temperature_c": 14.922198172198172,
+      "mean_humidity_rh": 65.24435305435306,
+      "mean_harvest_age_days": 3.8967195767195766
+    },
+    "Cabbage": {
+      "sample_count": 2032,
+      "shelf_life_mean": 13.083661417322835,
+      "shelf_life_median": 9.82,
+      "shelf_life_min": 0.5,
+      "shelf_life_max": 52.6,
+      "mean_freshness_score": 73.73436515748031,
+      "mean_quality_score": 72.5983562992126,
+      "mean_defect_probability": 0.5094996062992125,
+      "mean_temperature_c": 14.5722687007874,
+      "mean_humidity_rh": 65.778031496063,
+      "mean_harvest_age_days": 3.9432234251968503
+    },
+    "Capsicum": {
+      "sample_count": 2023,
+      "shelf_life_mean": 7.5272367770637665,
+      "shelf_life_median": 5.45,
+      "shelf_life_min": 0.5,
+      "shelf_life_max": 31.26,
+      "mean_freshness_score": 73.55328719723182,
+      "mean_quality_score": 73.14773109243698,
+      "mean_defect_probability": 0.5286320810677212,
+      "mean_temperature_c": 14.678487394957983,
+      "mean_humidity_rh": 65.31067226890755,
+      "mean_harvest_age_days": 4.002698961937716
+    },
+    "Carrot": {
+      "sample_count": 1994,
+      "shelf_life_mean": 11.074307923771313,
+      "shelf_life_median": 8.585,
+      "shelf_life_min": 0.5,
+      "shelf_life_max": 42.96,
+      "mean_freshness_score": 74.12317953861584,
+      "mean_quality_score": 72.09905717151456,
+      "mean_defect_probability": 0.49696364092276835,
+      "mean_temperature_c": 14.354914744232698,
+      "mean_humidity_rh": 65.96626880641925,
+      "mean_harvest_age_days": 3.9258024072216657
+    },
+    "Cauliflower": {
+      "sample_count": 1977,
+      "shelf_life_mean": 5.880268082953971,
+      "shelf_life_median": 4.28,
+      "shelf_life_min": 0.5,
+      "shelf_life_max": 23.58,
+      "mean_freshness_score": 73.91702073849267,
+      "mean_quality_score": 74.32744056651491,
+      "mean_defect_probability": 0.5400099645928174,
+      "mean_temperature_c": 14.75160343955488,
+      "mean_humidity_rh": 65.56248356095094,
+      "mean_harvest_age_days": 3.8667981790591806
+    },
+    "Chilli": {
+      "sample_count": 2030,
+      "shelf_life_mean": 7.5598522167487685,
+      "shelf_life_median": 5.63,
+      "shelf_life_min": 0.5,
+      "shelf_life_max": 29.16,
+      "mean_freshness_score": 73.68238916256158,
+      "mean_quality_score": 74.68571428571428,
+      "mean_defect_probability": 0.5519082266009853,
+      "mean_temperature_c": 14.601221674876847,
+      "mean_humidity_rh": 65.49907881773399,
+      "mean_harvest_age_days": 3.9429310344827586
+    },
+    "Cucumber": {
+      "sample_count": 2020,
+      "shelf_life_mean": 4.711094059405941,
+      "shelf_life_median": 3.335,
+      "shelf_life_min": 0.5,
+      "shelf_life_max": 18.42,
+      "mean_freshness_score": 73.53784653465347,
+      "mean_quality_score": 75.49513861386139,
+      "mean_defect_probability": 0.5755604455445543,
+      "mean_temperature_c": 14.988891089108911,
+      "mean_humidity_rh": 64.84639603960396,
+      "mean_harvest_age_days": 3.974366336633663
+    },
+    "Garlic": {
+      "sample_count": 1978,
+      "shelf_life_mean": 22.779418604651163,
+      "shelf_life_median": 15.24,
+      "shelf_life_min": 0.5,
+      "shelf_life_max": 133.47,
+      "mean_freshness_score": 57.756365015166836,
+      "mean_quality_score": 58.423387259858444,
+      "mean_defect_probability": 0.5883241152679475,
+      "mean_temperature_c": 14.632209302325581,
+      "mean_humidity_rh": 65.20784630940344,
+      "mean_harvest_age_days": 7.841329625884732
+    },
+    "Ginger": {
+      "sample_count": 1974,
+      "shelf_life_mean": 15.312142857142856,
+      "shelf_life_median": 10.135000000000002,
+      "shelf_life_min": 0.5,
+      "shelf_life_max": 88.7,
+      "mean_freshness_score": 57.51529888551165,
+      "mean_quality_score": 59.51199088145896,
+      "mean_defect_probability": 0.6074809523809525,
+      "mean_temperature_c": 14.39627152988855,
+      "mean_humidity_rh": 65.61303444782169,
+      "mean_harvest_age_days": 7.962056737588652
+    },
+    "Grapes": {
+      "sample_count": 1983,
+      "shelf_life_mean": 4.802541603630862,
+      "shelf_life_median": 3.58,
+      "shelf_life_min": 0.5,
+      "shelf_life_max": 18.38,
+      "mean_freshness_score": 74.16812909732727,
+      "mean_quality_score": 76.58427634896621,
+      "mean_defect_probability": 0.5868838124054462,
+      "mean_temperature_c": 14.60947049924357,
+      "mean_humidity_rh": 65.57173978819971,
+      "mean_harvest_age_days": 3.854261220373172
+    },
+    "Guava": {
+      "sample_count": 1979,
+      "shelf_life_mean": 3.3366498231430017,
+      "shelf_life_median": 2.5,
+      "shelf_life_min": 0.5,
+      "shelf_life_max": 13.08,
+      "mean_freshness_score": 73.92036382011116,
+      "mean_quality_score": 76.1776553815058,
+      "mean_defect_probability": 0.5798485598787267,
+      "mean_temperature_c": 14.52578575037898,
+      "mean_humidity_rh": 65.82257705912076,
+      "mean_harvest_age_days": 3.9164527539161194
+    },
+    "Lemon": {
+      "sample_count": 1916,
+      "shelf_life_mean": 14.929613778705637,
+      "shelf_life_median": 11.08,
+      "shelf_life_min": 0.5,
+      "shelf_life_max": 61.99,
+      "mean_freshness_score": 73.42758872651358,
+      "mean_quality_score": 69.96883611691024,
+      "mean_defect_probability": 0.4964070459290188,
+      "mean_temperature_c": 14.920673277661795,
+      "mean_humidity_rh": 65.3977713987474,
+      "mean_harvest_age_days": 3.9967432150313154
+    },
+    "Mango": {
+      "sample_count": 1972,
+      "shelf_life_mean": 4.027576064908722,
+      "shelf_life_median": 2.79,
+      "shelf_life_min": 0.5,
+      "shelf_life_max": 16.35,
+      "mean_freshness_score": 73.3541784989858,
+      "mean_quality_score": 75.41806288032454,
+      "mean_defect_probability": 0.5846031440162273,
+      "mean_temperature_c": 14.807297160243406,
+      "mean_humidity_rh": 65.29709939148073,
+      "mean_harvest_age_days": 4.023377281947261
+    },
+    "Okra": {
+      "sample_count": 2070,
+      "shelf_life_mean": 2.455705314009662,
+      "shelf_life_median": 1.755,
+      "shelf_life_min": 0.5,
+      "shelf_life_max": 10.11,
+      "mean_freshness_score": 74.27435265700483,
+      "mean_quality_score": 77.28424154589372,
+      "mean_defect_probability": 0.6052147826086957,
+      "mean_temperature_c": 14.746193236714976,
+      "mean_humidity_rh": 65.22905314009662,
+      "mean_harvest_age_days": 3.8214009661835746
+    },
+    "Onion": {
+      "sample_count": 1913,
+      "shelf_life_mean": 14.324255096706743,
+      "shelf_life_median": 9.45,
+      "shelf_life_min": 0.5,
+      "shelf_life_max": 79.37,
+      "mean_freshness_score": 57.2994877156299,
+      "mean_quality_score": 61.31792995295348,
+      "mean_defect_probability": 0.6459112911657082,
+      "mean_temperature_c": 14.937464715107161,
+      "mean_humidity_rh": 65.22583376894929,
+      "mean_harvest_age_days": 7.954490329325666
+    },
+    "Orange": {
+      "sample_count": 2025,
+      "shelf_life_mean": 12.579441975308642,
+      "shelf_life_median": 9.29,
+      "shelf_life_min": 0.5,
+      "shelf_life_max": 51.15,
+      "mean_freshness_score": 73.92663703703704,
+      "mean_quality_score": 71.04225185185184,
+      "mean_defect_probability": 0.48254622222222227,
+      "mean_temperature_c": 14.677086419753087,
+      "mean_humidity_rh": 65.62122469135802,
+      "mean_harvest_age_days": 3.8979753086419753
+    },
+    "Papaya": {
+      "sample_count": 1946,
+      "shelf_life_mean": 3.4655960945529287,
+      "shelf_life_median": 2.285,
+      "shelf_life_min": 0.5,
+      "shelf_life_max": 14.6,
+      "mean_freshness_score": 73.14830421377182,
+      "mean_quality_score": 75.91575025693732,
+      "mean_defect_probability": 0.5958684994861253,
+      "mean_temperature_c": 14.98555498458376,
+      "mean_humidity_rh": 64.89764645426516,
+      "mean_harvest_age_days": 4.062297019527235
+    },
+    "Peas": {
+      "sample_count": 1991,
+      "shelf_life_mean": 3.9110647915620294,
+      "shelf_life_median": 2.9,
+      "shelf_life_min": 0.5,
+      "shelf_life_max": 14.62,
+      "mean_freshness_score": 73.80210447011551,
+      "mean_quality_score": 77.04893018583626,
+      "mean_defect_probability": 0.6080339527875439,
+      "mean_temperature_c": 14.715519839276745,
+      "mean_humidity_rh": 65.73842290306379,
+      "mean_harvest_age_days": 3.951305876443998
+    },
+    "Pomegranate": {
+      "sample_count": 2011,
+      "shelf_life_mean": 20.870387866732973,
+      "shelf_life_median": 15.4,
+      "shelf_life_min": 0.5,
+      "shelf_life_max": 78.74,
+      "mean_freshness_score": 73.9378518150174,
+      "mean_quality_score": 69.24824465440079,
+      "mean_defect_probability": 0.4486224763799105,
+      "mean_temperature_c": 14.618687220288416,
+      "mean_humidity_rh": 65.53717056190949,
+      "mean_harvest_age_days": 3.908637493784187
+    },
+    "Potato": {
+      "sample_count": 2017,
+      "shelf_life_mean": 8.568125929598413,
+      "shelf_life_median": 5.76,
+      "shelf_life_min": 0.5,
+      "shelf_life_max": 59.65,
+      "mean_freshness_score": 57.15484878532474,
+      "mean_quality_score": 63.413212692117014,
+      "mean_defect_probability": 0.6240432325235499,
+      "mean_temperature_c": 14.659033217649975,
+      "mean_humidity_rh": 65.24003966286564,
+      "mean_harvest_age_days": 8.010361923648983
+    },
+    "Spinach": {
+      "sample_count": 1968,
+      "shelf_life_mean": 1.7382723577235772,
+      "shelf_life_median": 1.29,
+      "shelf_life_min": 0.5,
+      "shelf_life_max": 7.2,
+      "mean_freshness_score": 73.90103658536584,
+      "mean_quality_score": 77.85385162601627,
+      "mean_defect_probability": 0.6237168191056911,
+      "mean_temperature_c": 14.425182926829269,
+      "mean_humidity_rh": 66.01855182926829,
+      "mean_harvest_age_days": 3.92707825203252
+    },
+    "Tomato": {
+      "sample_count": 1995,
+      "shelf_life_mean": 3.2154335839598995,
+      "shelf_life_median": 2.48,
+      "shelf_life_min": 0.5,
+      "shelf_life_max": 12.68,
+      "mean_freshness_score": 74.00604010025062,
+      "mean_quality_score": 75.75449122807017,
+      "mean_defect_probability": 0.5678222556390977,
+      "mean_temperature_c": 14.196325814536342,
+      "mean_humidity_rh": 66.3948320802005,
+      "mean_harvest_age_days": 3.954867167919799
+    },
+    "Watermelon": {
+      "sample_count": 2046,
+      "shelf_life_mean": 5.710327468230694,
+      "shelf_life_median": 3.93,
+      "shelf_life_min": 0.5,
+      "shelf_life_max": 23.08,
+      "mean_freshness_score": 73.69093841642228,
+      "mean_quality_score": 74.07516617790813,
+      "mean_defect_probability": 0.557321945259042,
+      "mean_temperature_c": 14.988533724340176,
+      "mean_humidity_rh": 65.28209188660801,
+      "mean_harvest_age_days": 3.927986314760508
+    }
+  },
+  "storage": {
+    "Cold Storage": {
+      "sample_count": 11027,
+      "shelf_life_mean": 15.039435929990024,
+      "shelf_life_median": 10.08,
+      "mean_temperature_c": 4.034806384329373,
+      "mean_humidity_rh": 89.48290559535685,
+      "mean_freshness_score": 77.25218010338261,
+      "mean_quality_score": 78.81104652217284
+    },
+    "Controlled Atmosphere": {
+      "sample_count": 3997,
+      "shelf_life_mean": 18.37596447335502,
+      "shelf_life_median": 12.22,
+      "mean_temperature_c": 3.0282361771328494,
+      "mean_humidity_rh": 97.99745809357017,
+      "mean_freshness_score": 77.48064048036026,
+      "mean_quality_score": 79.39172129096822
+    },
+    "Open Market": {
+      "sample_count": 7540,
+      "shelf_life_mean": 1.5386392572944296,
+      "shelf_life_median": 0.64,
+      "mean_temperature_c": 30.00787267904509,
+      "mean_humidity_rh": 37.73836472148541,
+      "mean_freshness_score": 61.35991909814323,
+      "mean_quality_score": 62.27596949602122
+    },
+    "Refrigerated": {
+      "sample_count": 12339,
+      "shelf_life_mean": 11.550495988329686,
+      "shelf_life_median": 7.71,
+      "mean_temperature_c": 6.01307642434557,
+      "mean_humidity_rh": 75.05566010211524,
+      "mean_freshness_score": 77.00378555798687,
+      "mean_quality_score": 77.64848285922685
+    },
+    "Room Temperature": {
+      "sample_count": 15097,
+      "shelf_life_mean": 2.1432211697688284,
+      "shelf_life_median": 1.15,
+      "mean_temperature_c": 25.01545273895476,
+      "mean_humidity_rh": 45.29609061402928,
+      "mean_freshness_score": 65.24630588858713,
+      "mean_quality_score": 65.78596873551037
+    }
+  },
+  "temperature": {
+    "overall": {
+      "pearson": -0.5258168177693565,
+      "spearman": -0.6836108686449975,
+      "quintiles": [
+        {
+          "n": 10024,
+          "temp_mean": 2.2705806065442937,
+          "shelf_life_mean": 15.501734836392659,
+          "shelf_life_median": 10.25
+        },
+        {
+          "n": 9994,
+          "temp_mean": 5.061180708425055,
+          "shelf_life_mean": 13.772138282969783,
+          "shelf_life_median": 9.2
+        },
+        {
+          "n": 9983,
+          "temp_mean": 11.503446859661425,
+          "shelf_life_mean": 9.512763698287088,
+          "shelf_life_median": 5.79
+        },
+        {
+          "n": 10001,
+          "temp_mean": 24.996442355764426,
+          "shelf_life_mean": 2.093988601139886,
+          "shelf_life_median": 1.1
+        },
+        {
+          "n": 9998,
+          "temp_mean": 29.659791958391676,
+          "shelf_life_mean": 1.6835037007401479,
+          "shelf_life_median": 0.75
+        }
+      ]
+    },
+    "Cold Storage": {
+      "pearson": -0.020747901701441505,
+      "spearman": -0.015870973299113,
+      "temperature_min": 0.0,
+      "temperature_max": 12.29
+    },
+    "Controlled Atmosphere": {
+      "pearson": -0.0255601111286574,
+      "spearman": -0.033934328525916886,
+      "temperature_min": 0.0,
+      "temperature_max": 10.44
+    },
+    "Open Market": {
+      "pearson": -0.01948751550881409,
+      "spearman": -0.022137625833953116,
+      "temperature_min": 20.54,
+      "temperature_max": 37.69
+    },
+    "Refrigerated": {
+      "pearson": -0.04540133332200348,
+      "spearman": -0.04192889210968385,
+      "temperature_min": 0.0,
+      "temperature_max": 14.53
+    },
+    "Room Temperature": {
+      "pearson": -0.04677829405781426,
+      "spearman": -0.057575122849144546,
+      "temperature_min": 16.69,
+      "temperature_max": 34.7
+    }
+  },
+  "humidity": {
+    "overall": {
+      "pearson": 0.5279146967767654,
+      "spearman": 0.6986470681433806,
+      "deciles": [
+        {
+          "n": 5003,
+          "rh_mean": 35.00152708374975,
+          "shelf_life_mean": 1.5291225264841095,
+          "shelf_life_median": 0.6
+        },
+        {
+          "n": 5001,
+          "rh_mean": 38.04457108578284,
+          "shelf_life_mean": 1.6694721055788844,
+          "shelf_life_median": 0.75
+        },
+        {
+          "n": 5003,
+          "rh_mean": 43.0273136118329,
+          "shelf_life_mean": 1.9352208674795122,
+          "shelf_life_median": 1.0
+        },
+        {
+          "n": 4995,
+          "rh_mean": 48.30945345345345,
+          "shelf_life_mean": 2.292884884884885,
+          "shelf_life_median": 1.32
+        },
+        {
+          "n": 4998,
+          "rh_mean": 60.043131252501,
+          "shelf_life_mean": 6.481022408963586,
+          "shelf_life_median": 3.59
+        },
+        {
+          "n": 5005,
+          "rh_mean": 72.8752147852148,
+          "shelf_life_mean": 12.120577422577423,
+          "shelf_life_median": 8.05
+        },
+        {
+          "n": 4996,
+          "rh_mean": 79.56720776621297,
+          "shelf_life_mean": 12.75646517213771,
+          "shelf_life_median": 8.48
+        },
+        {
+          "n": 5004,
+          "rh_mean": 86.08609112709831,
+          "shelf_life_mean": 13.98337529976019,
+          "shelf_life_median": 9.41
+        },
+        {
+          "n": 9995,
+          "rh_mean": 95.83236418209104,
+          "shelf_life_mean": 16.195483741870934,
+          "shelf_life_median": 10.75
+        }
+      ]
+    },
+    "Cold Storage": {
+      "pearson": -0.023779935210335938,
+      "spearman": -0.020070252900607415,
+      "quintiles": [
+        {
+          "n": 2207,
+          "rh_mean": 80.1379746261894,
+          "shelf_life_mean": 15.544340734028093
+        },
+        {
+          "n": 2206,
+          "rh_mean": 86.08409791477787,
+          "shelf_life_mean": 14.90181776971895
+        },
+        {
+          "n": 2204,
+          "rh_mean": 89.85921052631579,
+          "shelf_life_mean": 15.115358439201453
+        },
+        {
+          "n": 2209,
+          "rh_mean": 93.71782254413762,
+          "shelf_life_mean": 15.066545948392937
+        },
+        {
+          "n": 2201,
+          "rh_mean": 97.63271240345298,
+          "shelf_life_mean": 14.567850976828714
+        }
+      ]
+    },
+    "Controlled Atmosphere": {
+      "pearson": -0.009413887682480719,
+      "spearman": -0.019971710472853205,
+      "quintiles": [
+        {
+          "n": 3997,
+          "rh_mean": 97.99745809357019,
+          "shelf_life_mean": 18.375964473355015
+        }
+      ]
+    },
+    "Open Market": {
+      "pearson": 0.04202998120421987,
+      "spearman": 0.06450200374192148,
+      "quintiles": [
+        {
+          "n": 4528,
+          "rh_mean": 35.15635600706714,
+          "shelf_life_mean": 1.4907442579505301
+        },
+        {
+          "n": 1505,
+          "rh_mean": 38.68909634551495,
+          "shelf_life_mean": 1.4927906976744187
+        },
+        {
+          "n": 1507,
+          "rh_mean": 44.546914399469145,
+          "shelf_life_mean": 1.7283344392833444
+        }
+      ]
+    },
+    "Refrigerated": {
+      "pearson": 0.02419691421880537,
+      "spearman": 0.01919326583714167,
+      "quintiles": [
+        {
+          "n": 2468,
+          "rh_mean": 65.21058346839546,
+          "shelf_life_mean": 10.78438006482982
+        },
+        {
+          "n": 2475,
+          "rh_mean": 71.26463838383839,
+          "shelf_life_mean": 11.822327272727271
+        },
+        {
+          "n": 2469,
+          "rh_mean": 75.03836371000405,
+          "shelf_life_mean": 12.013479141352773
+        },
+        {
+          "n": 2463,
+          "rh_mean": 78.80178643930167,
+          "shelf_life_mean": 11.450093382054407
+        },
+        {
+          "n": 2464,
+          "rh_mean": 84.99739042207793,
+          "shelf_life_mean": 11.681249999999999
+        }
+      ]
+    },
+    "Room Temperature": {
+      "pearson": 0.12112437011971751,
+      "spearman": 0.15627523164545876,
+      "quintiles": [
+        {
+          "n": 3027,
+          "rh_mean": 36.42833828873472,
+          "shelf_life_mean": 1.734522629666336
+        },
+        {
+          "n": 3018,
+          "rh_mean": 41.315957587806494,
+          "shelf_life_mean": 1.9431510934393639
+        },
+        {
+          "n": 3022,
+          "rh_mean": 45.04273328921245,
+          "shelf_life_mean": 2.0665552614162808
+        },
+        {
+          "n": 3011,
+          "rh_mean": 48.75954832281634,
+          "shelf_life_mean": 2.3664995018266355
+        },
+        {
+          "n": 3019,
+          "rh_mean": 54.96548526001987,
+          "shelf_life_mean": 2.6070619410400795
+        }
+      ]
+    }
+  },
+  "floor_vs_rest": {
+    "floor_count": 8634,
+    "rest_count": 41366,
+    "numeric_floor": {
+      "freshness_score": {
+        "count": 8634,
+        "min": 15.0,
+        "q25": 51.64,
+        "median": 62.595,
+        "q75": 70.57,
+        "max": 92.75,
+        "mean": 60.009397729905025,
+        "std_sample": 14.39104574937862
+      },
+      "quality_score": {
+        "count": 8634,
+        "min": 15.27,
+        "q25": 55.81,
+        "median": 63.97,
+        "q75": 70.79,
+        "max": 94.47,
+        "mean": 62.76021311095668,
+        "std_sample": 11.163602328957083
+      },
+      "defect_probability": {
+        "count": 8634,
+        "min": 0.3547,
+        "q25": 0.6392,
+        "median": 0.7067,
+        "q75": 0.7852,
+        "max": 0.95,
+        "mean": 0.7156394834375723,
+        "std_sample": 0.10890671875201817
+      },
+      "temperature_c": {
+        "count": 8634,
+        "min": 0.0,
+        "q25": 24.52,
+        "median": 26.785,
+        "q75": 29.5875,
+        "max": 37.69,
+        "mean": 26.545137827194814,
+        "std_sample": 4.9193692318281785
+      },
+      "humidity_rh": {
+        "count": 8634,
+        "min": 35.0,
+        "q25": 35.0,
+        "median": 40.21,
+        "q75": 46.13,
+        "max": 98.0,
+        "mean": 42.4510041695622,
+        "std_sample": 9.266802804464168
+      },
+      "harvest_age_days": {
+        "count": 8634,
+        "min": 0.2,
+        "q25": 2.78,
+        "median": 4.64,
+        "q75": 7.4275,
+        "max": 26.56,
+        "mean": 5.463489691915682,
+        "std_sample": 3.606083228529402
+      }
+    },
+    "numeric_rest": {
+      "freshness_score": {
+        "count": 41366,
+        "min": 15.0,
+        "q25": 65.36,
+        "median": 75.54,
+        "q75": 84.03,
+        "max": 99.0,
+        "mean": 73.52066310496544,
+        "std_sample": 14.247182324409408
+      },
+      "quality_score": {
+        "count": 41366,
+        "min": 20.36,
+        "q25": 66.46,
+        "median": 75.15,
+        "q75": 83.03,
+        "max": 100.0,
+        "mean": 74.10295049074118,
+        "std_sample": 12.101725769276406
+      },
+      "defect_probability": {
+        "count": 41366,
+        "min": 0.1463,
+        "q25": 0.4255,
+        "median": 0.5177,
+        "q75": 0.6226750000000001,
+        "max": 0.95,
+        "mean": 0.5296144514818933,
+        "std_sample": 0.14088312127107863
+      },
+      "temperature_c": {
+        "count": 41366,
+        "min": 0.0,
+        "q25": 3.98,
+        "median": 6.54,
+        "q75": 24.3,
+        "max": 37.34,
+        "mean": 12.220614756079872,
+        "std_sample": 10.616698710699184
+      },
+      "humidity_rh": {
+        "count": 41366,
+        "min": 35.0,
+        "q25": 47.95,
+        "median": 75.25,
+        "q75": 88.91,
+        "max": 98.0,
+        "mean": 70.26050403713194,
+        "std_sample": 21.559778687585766
+      },
+      "harvest_age_days": {
+        "count": 41366,
+        "min": 0.2,
+        "q25": 2.1,
+        "median": 3.64,
+        "q75": 5.94,
+        "max": 24.67,
+        "mean": 4.384283711260456,
+        "std_sample": 3.0602408224857065
+      }
+    },
+    "categorical_floor": {
+      "produce_type": {
+        "Apple": {
+          "count": 234,
+          "percent_of_group": 2.7102154273801253
+        },
+        "Banana": {
+          "count": 446,
+          "percent_of_group": 5.165624276117675
+        },
+        "Brinjal": {
+          "count": 445,
+          "percent_of_group": 5.154042158906648
+        },
+        "Cabbage": {
+          "count": 222,
+          "percent_of_group": 2.571230020847811
+        },
+        "Capsicum": {
+          "count": 304,
+          "percent_of_group": 3.520963632151957
+        },
+        "Carrot": {
+          "count": 232,
+          "percent_of_group": 2.687051192958073
+        },
+        "Cauliflower": {
+          "count": 288,
+          "percent_of_group": 3.3356497567755383
+        },
+        "Chilli": {
+          "count": 293,
+          "percent_of_group": 3.3935603428306695
+        },
+        "Cucumber": {
+          "count": 351,
+          "percent_of_group": 4.065323141070188
+        },
+        "Garlic": {
+          "count": 314,
+          "percent_of_group": 3.636784804262219
+        },
+        "Ginger": {
+          "count": 339,
+          "percent_of_group": 3.9263377345378734
+        },
+        "Grapes": {
+          "count": 340,
+          "percent_of_group": 3.9379198517489
+        },
+        "Guava": {
+          "count": 413,
+          "percent_of_group": 4.783414408153811
+        },
+        "Lemon": {
+          "count": 228,
+          "percent_of_group": 2.640722724113968
+        },
+        "Mango": {
+          "count": 374,
+          "percent_of_group": 4.33171183692379
+        },
+        "Okra": {
+          "count": 526,
+          "percent_of_group": 6.092193652999768
+        },
+        "Onion": {
+          "count": 359,
+          "percent_of_group": 4.157980078758397
+        },
+        "Orange": {
+          "count": 217,
+          "percent_of_group": 2.51331943479268
+        },
+        "Papaya": {
+          "count": 417,
+          "percent_of_group": 4.829742876997916
+        },
+        "Peas": {
+          "count": 383,
+          "percent_of_group": 4.435950891823025
+        },
+        "Pomegranate": {
+          "count": 194,
+          "percent_of_group": 2.2469307389390782
+        },
+        "Potato": {
+          "count": 372,
+          "percent_of_group": 4.308547602501737
+        },
+        "Spinach": {
+          "count": 600,
+          "percent_of_group": 6.949270326615705
+        },
+        "Tomato": {
+          "count": 437,
+          "percent_of_group": 5.061385221218439
+        },
+        "Watermelon": {
+          "count": 306,
+          "percent_of_group": 3.5441278665740095
+        }
+      },
+      "storage_type": {
+        "Cold Storage": {
+          "count": 77,
+          "percent_of_group": 0.8918230252490155
+        },
+        "Controlled Atmosphere": {
+          "count": 14,
+          "percent_of_group": 0.16214964095436646
+        },
+        "Open Market": {
+          "count": 3480,
+          "percent_of_group": 40.305767894371094
+        },
+        "Refrigerated": {
+          "count": 168,
+          "percent_of_group": 1.9457956914523975
+        },
+        "Room Temperature": {
+          "count": 4895,
+          "percent_of_group": 56.69446374797313
+        }
+      }
+    },
+    "categorical_rest": {
+      "produce_type": {
+        "Apple": {
+          "count": 1772,
+          "percent_of_group": 4.283711260455447
+        },
+        "Banana": {
+          "count": 1609,
+          "percent_of_group": 3.8896678431562153
+        },
+        "Brinjal": {
+          "count": 1634,
+          "percent_of_group": 3.9501039501039505
+        },
+        "Cabbage": {
+          "count": 1810,
+          "percent_of_group": 4.375574143016003
+        },
+        "Capsicum": {
+          "count": 1719,
+          "percent_of_group": 4.155586713726249
+        },
+        "Carrot": {
+          "count": 1762,
+          "percent_of_group": 4.259536817676353
+        },
+        "Cauliflower": {
+          "count": 1689,
+          "percent_of_group": 4.083063385388966
+        },
+        "Chilli": {
+          "count": 1737,
+          "percent_of_group": 4.199100710728618
+        },
+        "Cucumber": {
+          "count": 1669,
+          "percent_of_group": 4.03471449983078
+        },
+        "Garlic": {
+          "count": 1664,
+          "percent_of_group": 4.022627278441232
+        },
+        "Ginger": {
+          "count": 1635,
+          "percent_of_group": 3.9525213943818596
+        },
+        "Grapes": {
+          "count": 1643,
+          "percent_of_group": 3.971860948605135
+        },
+        "Guava": {
+          "count": 1566,
+          "percent_of_group": 3.785717739206111
+        },
+        "Lemon": {
+          "count": 1688,
+          "percent_of_group": 4.080645941111057
+        },
+        "Mango": {
+          "count": 1598,
+          "percent_of_group": 3.863075956099212
+        },
+        "Okra": {
+          "count": 1544,
+          "percent_of_group": 3.7325339650921046
+        },
+        "Onion": {
+          "count": 1554,
+          "percent_of_group": 3.7567084078711988
+        },
+        "Orange": {
+          "count": 1808,
+          "percent_of_group": 4.370739254460185
+        },
+        "Papaya": {
+          "count": 1529,
+          "percent_of_group": 3.6962723009234635
+        },
+        "Peas": {
+          "count": 1608,
+          "percent_of_group": 3.887250398878306
+        },
+        "Pomegranate": {
+          "count": 1817,
+          "percent_of_group": 4.392496252961369
+        },
+        "Potato": {
+          "count": 1645,
+          "percent_of_group": 3.9766958371609533
+        },
+        "Spinach": {
+          "count": 1368,
+          "percent_of_group": 3.3070637721800513
+        },
+        "Tomato": {
+          "count": 1558,
+          "percent_of_group": 3.766378184982836
+        },
+        "Watermelon": {
+          "count": 1740,
+          "percent_of_group": 4.206353043562346
+        }
+      },
+      "storage_type": {
+        "Cold Storage": {
+          "count": 10950,
+          "percent_of_group": 26.471014843107866
+        },
+        "Controlled Atmosphere": {
+          "count": 3983,
+          "percent_of_group": 9.628680558913116
+        },
+        "Open Market": {
+          "count": 4060,
+          "percent_of_group": 9.81482376831214
+        },
+        "Refrigerated": {
+          "count": 12171,
+          "percent_of_group": 29.42271430643524
+        },
+        "Room Temperature": {
+          "count": 10202,
+          "percent_of_group": 24.66276652323164
+        }
+      }
+    }
+  },
+  "suspicious_patterns": {
+    "unique_produce_storage_pairs": 125,
+    "all_possible_produce_storage_pairs": 125,
+    "unique_target_values": 4774,
+    "target_values_with_1_decimal": 12633,
+    "target_values_with_2_decimals": 37367,
+    "predictor_rows_repeated_when_numeric_rounded_1_decimal": 0,
+    "nearest_neighbor_numeric_distance_standardized": {
+      "min": 0.02677695574696783,
+      "median": 0.19207937586757945,
+      "p01": 0.0814602557756479,
+      "p05": 0.11079794817236215,
+      "below_0_05": 30,
+      "below_0_10": 1446
+    },
+    "produce_storage_target_range": {
+      "groups": 125,
+      "groups_with_constant_target": 0,
+      "group_target_std_min": 0.3418833470835464,
+      "group_target_std_median": 2.58133226047483,
+      "group_target_std_max": 27.622840719414064,
+      "group_target_range_min": 1.92,
+      "group_target_range_median": 12.63,
+      "group_target_range_max": 129.97
+    },
+    "target_floor_by_produce_percent": {
+      "Apple": 2.7102154273801253,
+      "Banana": 5.165624276117675,
+      "Brinjal": 5.154042158906648,
+      "Cabbage": 2.571230020847811,
+      "Capsicum": 3.520963632151957,
+      "Carrot": 2.687051192958073,
+      "Cauliflower": 3.3356497567755383,
+      "Chilli": 3.3935603428306695,
+      "Cucumber": 4.065323141070188,
+      "Garlic": 3.636784804262219,
+      "Ginger": 3.9263377345378734,
+      "Grapes": 3.9379198517489,
+      "Guava": 4.783414408153811,
+      "Lemon": 2.640722724113968,
+      "Mango": 4.33171183692379,
+      "Okra": 6.092193652999768,
+      "Onion": 4.157980078758397,
+      "Orange": 2.51331943479268,
+      "Papaya": 4.829742876997916,
+      "Peas": 4.435950891823025,
+      "Pomegranate": 2.2469307389390782,
+      "Potato": 4.308547602501737,
+      "Spinach": 6.949270326615705,
+      "Tomato": 5.061385221218439,
+      "Watermelon": 3.5441278665740095
+    },
+    "target_floor_by_storage_percent": {
+      "Cold Storage": 0.8918230252490155,
+      "Controlled Atmosphere": 0.16214964095436646,
+      "Open Market": 40.305767894371094,
+      "Refrigerated": 1.9457956914523975,
+      "Room Temperature": 56.69446374797313
+    },
+    "target_floor_fraction_by_produce": {
+      "Apple": 11.665004985044865,
+      "Banana": 21.703163017031628,
+      "Brinjal": 21.404521404521404,
+      "Cabbage": 10.9251968503937,
+      "Capsicum": 15.027187345526446,
+      "Carrot": 11.634904714142428,
+      "Cauliflower": 14.56752655538695,
+      "Chilli": 14.433497536945813,
+      "Cucumber": 17.376237623762375,
+      "Garlic": 15.874620829120323,
+      "Ginger": 17.17325227963526,
+      "Grapes": 17.14573877962683,
+      "Guava": 20.869125821121777,
+      "Lemon": 11.899791231732777,
+      "Mango": 18.96551724137931,
+      "Okra": 25.41062801932367,
+      "Onion": 18.76633559853633,
+      "Orange": 10.716049382716049,
+      "Papaya": 21.428571428571427,
+      "Peas": 19.236564540431942,
+      "Pomegranate": 9.646941819990055,
+      "Potato": 18.443232523549828,
+      "Spinach": 30.48780487804878,
+      "Tomato": 21.904761904761905,
+      "Watermelon": 14.95601173020528
+    },
+    "target_floor_fraction_by_storage": {
+      "Cold Storage": 0.6982860252108462,
+      "Controlled Atmosphere": 0.3502626970227671,
+      "Open Market": 46.15384615384615,
+      "Refrigerated": 1.361536591295891,
+      "Room Temperature": 32.42366032986686
+    }
+  },
+  "models": {
+    "Mean baseline": {
+      "mae": 8.07561539375,
+      "rmse": 11.838923980689254,
+      "r2": -0.0006794413762580831
+    },
+    "Linear Regression": {
+      "mae": 4.725727237125735,
+      "rmse": 6.9304157359628995,
+      "r2": 0.6570829424047334
+    },
+    "Decision Tree": {
+      "mae": 2.1228439999999997,
+      "rmse": 3.71751606586979,
+      "r2": 0.9013320234839777
+    },
+    "Random Forest": {
+      "mae": 1.5829939720000001,
+      "rmse": 2.6975193171503338,
+      "r2": 0.9480483147159815
+    },
+    "XGBoost": {
+      "mae": 1.5578361123335958,
+      "rmse": 2.617318980583025,
+      "r2": 0.9510915586165767
+    },
+    "XGBoost_feature_importance_top_20": [
+      {
+        "feature": "categorical__produce_type_Garlic",
+        "importance": 0.2502981424331665
+      },
+      {
+        "feature": "categorical__produce_type_Ginger",
+        "importance": 0.09135596454143524
+      },
+      {
+        "feature": "categorical__produce_type_Onion",
+        "importance": 0.08869345486164093
+      },
+      {
+        "feature": "categorical__produce_type_Pomegranate",
+        "importance": 0.07712467759847641
+      },
+      {
+        "feature": "categorical__produce_type_Lemon",
+        "importance": 0.0513911247253418
+      },
+      {
+        "feature": "numeric__defect_probability",
+        "importance": 0.047801852226257324
+      },
+      {
+        "feature": "categorical__produce_type_Cabbage",
+        "importance": 0.04524734988808632
+      },
+      {
+        "feature": "categorical__produce_type_Apple",
+        "importance": 0.03701731562614441
+      },
+      {
+        "feature": "categorical__storage_type_Controlled Atmosphere",
+        "importance": 0.02990034967660904
+      },
+      {
+        "feature": "categorical__produce_type_Tomato",
+        "importance": 0.02875756472349167
+      },
+      {
+        "feature": "categorical__produce_type_Brinjal",
+        "importance": 0.028280183672904968
+      },
+      {
+        "feature": "categorical__storage_type_Refrigerated",
+        "importance": 0.025758493691682816
+      },
+      {
+        "feature": "categorical__produce_type_Spinach",
+        "importance": 0.018815668299794197
+      },
+      {
+        "feature": "categorical__produce_type_Guava",
+        "importance": 0.018498029559850693
+      },
+      {
+        "feature": "categorical__produce_type_Potato",
+        "importance": 0.017625248059630394
+      },
+      {
+        "feature": "categorical__produce_type_Okra",
+        "importance": 0.016172263771295547
+      },
+      {
+        "feature": "categorical__produce_type_Orange",
+        "importance": 0.015609783120453358
+      },
+      {
+        "feature": "categorical__produce_type_Mango",
+        "importance": 0.01050731260329485
+      },
+      {
+        "feature": "numeric__temperature_c",
+        "importance": 0.0102075869217515
+      },
+      {
+        "feature": "categorical__produce_type_Carrot",
+        "importance": 0.009794672951102257
+      }
+    ]
+  },
+  "multiplicative_formula_candidate": {
+    "description": "log-linear categorical produce/storage baseline with power effects for freshness, quality and (1-defect), and exponential effects for temperature, humidity and harvest age; fit on target > 0.5, predictions clipped at 0.5",
+    "trained_rows_above_0_5": 33104,
+    "all_test_metrics_after_0_5_floor": {
+      "mae": 2.0205869304239514,
+      "rmse": 3.440022906547244,
+      "r2": 0.9155123593223579
+    },
+    "nonfloor_test_metrics_unclipped": {
+      "mae": 2.161750376896556,
+      "rmse": 3.6559479352481197,
+      "r2": 0.9121519094163492
+    },
+    "test_floor_count": 1738,
+    "floor_rows_with_unclipped_formula_prediction_le_0_5": 76,
+    "floor_rows_percent_unclipped_formula_prediction_le_0_5": 4.372842347525892,
+    "floor_rows_unclipped_prediction_stats": {
+      "count": 1738,
+      "min": 0.07186260774663333,
+      "q25": 0.8643776399502365,
+      "median": 1.227207400639935,
+      "q75": 2.284828268957738,
+      "max": 18.481907910745367,
+      "mean": 1.84621938325663,
+      "std_sample": 1.655789100375806
+    }
+  },
+  "split": {
+    "train_rows": 40000,
+    "test_rows": 10000,
+    "seed": 42,
+    "test_size": 0.2
+  },
+  "floor_model_checks": {
+    "Random Forest": {
+      "test_floor_rows": 1738,
+      "test_floor_actual_mean": 0.5,
+      "test_floor_predicted_mean": 1.6630130494821633,
+      "test_floor_predicted_median": 1.0596599999999998,
+      "test_nonfloor_metrics": {
+        "mae": 1.6713414475913826,
+        "rmse": 2.8219542010673764,
+        "r2": 0.9476601776798708
+      }
+    },
+    "XGBoost": {
+      "test_floor_rows": 1738,
+      "test_floor_actual_mean": 0.5,
+      "test_floor_predicted_mean": 1.6078567504882812,
+      "test_floor_predicted_median": 1.013587474822998,
+      "test_nonfloor_metrics": {
+        "mae": 1.6521114968581168,
+        "rmse": 2.7456153973956146,
+        "r2": 0.9504536432709384
+      }
+    }
+  }
+}

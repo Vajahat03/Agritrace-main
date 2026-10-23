@@ -1,0 +1,45 @@
+{
+  "dataset_name": "AgriTrace Normalized Agricultural Vision Benchmark",
+  "total_images": 96,
+  "usable_images": 96,
+  "corrupted_images": 0,
+  "duplicate_images": 0,
+  "total_unique_specimens": 32,
+  "split_counts": {
+    "train": 66,
+    "validation": 12,
+    "test": 18
+  },
+  "classes": [
+    "Tomato",
+    "Apple",
+    "Banana",
+    "Potato",
+    "Onion",
+    "Orange",
+    "Bell Pepper",
+    "Strawberry",
+    "Unknown"
+  ],
+  "freshness_grades": [
+    "Fresh",
+    "Moderately Fresh",
+    "Early Spoilage",
+    "Spoiled"
+  ],
+  "defect_types": [
+    "None",
+    "Bruise",
+    "Soft Spot",
+    "Cut",
+    "Mold",
+    "Other"
+  ],
+  "dataset_sources": [
+    "VegFru",
+    "AgriTrace-Collected",
+    "AgriFreshNET",
+    "FruitNet"
+  ],
+  "leakage_prevention": "Specimen-Aware Group Partitioning Verified (Zero specimen leakage between train and test)"
+}

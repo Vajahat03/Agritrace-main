@@ -1,0 +1,4 @@
+# Install together with requirements.txt when running vision endpoints/tests.
+# These large native packages are imported only when the vision pipeline runs.
+torch==2.7.0
+torchvision==0.22.0

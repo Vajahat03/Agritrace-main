@@ -1,0 +1,10 @@
+{
+  "unchanged": true,
+  "original_dataset_sha256": "d30663ca50d45c40025f61aa8fa925ae3d68e714a1c1a143543ef74c4b67f1af",
+  "production_entrypoints_unchanged": true,
+  "production_integration": false,
+  "v1_directory_unchanged": true,
+  "previous_v2_directory_unchanged": true,
+  "critical_artifact_hashes_verified": true,
+  "fresh_process_inference": "PASS"
+}

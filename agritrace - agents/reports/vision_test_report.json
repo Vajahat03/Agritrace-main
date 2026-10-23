@@ -1,0 +1,347 @@
+{
+  "model_name": "AgriTrace Vision-D121",
+  "architecture": "DenseNet-121",
+  "evaluation_timestamp": "2026-09-05T20:17:35Z",
+  "checkpoint_path": "models/vision/agritrace_vision_d121_best.pt",
+  "test_samples_total": 4873,
+  "synthetic_images_used": 0,
+  "produce_classification": {
+    "status": "EVALUATED",
+    "accuracy": 94.86,
+    "macro_f1": 0.971,
+    "per_class": {
+      "Tomato": {
+        "support": 165,
+        "precision": 0.982,
+        "recall": 1.0,
+        "f1": 0.991
+      },
+      "Apple": {
+        "support": 579,
+        "precision": 0.994,
+        "recall": 0.896,
+        "f1": 0.943
+      },
+      "Banana": {
+        "support": 839,
+        "precision": 0.991,
+        "recall": 1.0,
+        "f1": 0.995
+      },
+      "Potato": {
+        "support": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "Onion": {
+        "support": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "Orange": {
+        "support": 595,
+        "precision": 1.0,
+        "recall": 0.913,
+        "f1": 0.954
+      },
+      "Bell Pepper": {
+        "support": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "Strawberry": {
+        "support": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "Unknown": {
+        "support": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        165,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        519,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        57
+      ],
+      [
+        0,
+        0,
+        839,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        3,
+        8,
+        0,
+        0,
+        543,
+        0,
+        0,
+        41
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  "freshness_classification": {
+    "status": "EVALUATED",
+    "accuracy": 93.39,
+    "macro_f1": 0.889,
+    "per_class": {
+      "Fresh": {
+        "support": 2449,
+        "precision": 0.942,
+        "recall": 0.966,
+        "f1": 0.954
+      },
+      "Moderately Fresh": {
+        "support": 543,
+        "precision": 0.755,
+        "recall": 0.748,
+        "f1": 0.751
+      },
+      "Early Spoilage": {
+        "support": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "Spoiled": {
+        "support": 1777,
+        "precision": 0.978,
+        "recall": 0.947,
+        "f1": 0.962
+      }
+    },
+    "confusion_matrix": [
+      [
+        2366,
+        76,
+        0,
+        7
+      ],
+      [
+        107,
+        406,
+        0,
+        30
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        39,
+        56,
+        0,
+        1682
+      ]
+    ],
+    "ordinal_mean_absolute_class_error": 0.103
+  },
+  "quality_regression": {
+    "status": "EVALUATED",
+    "evaluated_samples": 4873,
+    "MAE": 5.71,
+    "RMSE": 9.66,
+    "R2": 0.905
+  },
+  "defect_diagnosis": {
+    "status": "EVALUATED",
+    "accuracy": 100.0,
+    "macro_f1": 1.0,
+    "per_class": {
+      "None": {
+        "support": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "Bruise": {
+        "support": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "Soft Spot": {
+        "support": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "Cut": {
+        "support": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "Mold": {
+        "support": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "Other": {
+        "support": 104,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        104
+      ]
+    ]
+  },
+  "calibration": {
+    "optimal_temperature_fitted_on_val": 0.876,
+    "test_uncalibrated_ece": 0.0234,
+    "test_calibrated_ece": 0.0121,
+    "ece_improvement": 0.0113
+  },
+  "ood_detection": {
+    "status": "EVALUATED",
+    "in_distribution_samples": 4873,
+    "ood_samples": 100,
+    "AUROC": 0.6716,
+    "FPR_at_95TPR": 1.0
+  },
+  "robustness": {
+    "gaussian_blur": "76.7% accuracy (30 test samples)",
+    "low_brightness": "86.7% accuracy (30 test samples)",
+    "high_brightness": "76.7% accuracy (30 test samples)",
+    "low_contrast": "83.3% accuracy (30 test samples)"
+  }
+}

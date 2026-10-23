@@ -1,0 +1,110 @@
+{
+  "model_version": "shelf_life_xgboost_v2_log",
+  "dataset_filename": "shelf life prediction dataset.xlsx.csv",
+  "dataset_sha256": "d30663ca50d45c40025f61aa8fa925ae3d68e714a1c1a143543ef74c4b67f1af",
+  "dataset_row_count": 50000,
+  "feature_list": [
+    "produce_type",
+    "freshness_score",
+    "quality_score",
+    "defect_probability",
+    "temperature_c",
+    "humidity_rh",
+    "harvest_age_days",
+    "storage_type"
+  ],
+  "target": "remaining_shelf_life_days",
+  "original_target_column": "remaining_shelf_life_days",
+  "target_transformation": "log1p",
+  "inverse_transformation": "expm1",
+  "split_percentages": {
+    "train": 70,
+    "validation": 15,
+    "test": 15
+  },
+  "split_counts": {
+    "train": 34999,
+    "validation": 7501,
+    "test": 7500
+  },
+  "split_random_seed": 42,
+  "split_procedure": "V1 two-stage shuffled train_test_split; seed 42",
+  "split_index_sha256": {
+    "train": "ef799acb4f025abe0f47bc16111d3b0563a686ba710ba053929a550f4f57b303",
+    "validation": "aca70a5f80bfa8154deaa9f1de267aab683cc2f42e5b90ed37c4f33bbe701f54",
+    "test": "780d6fae8d7a641834b0b343e094ccca4e12732b141d6ae7bed708dba2cb323b"
+  },
+  "python_version": "3.12.10",
+  "xgboost_version": "3.4.1",
+  "scikit_learn_version": "1.9.1",
+  "hyperparameters": {
+    "n_estimators": 900,
+    "max_depth": 7,
+    "learning_rate": 0.035,
+    "subsample": 0.9,
+    "colsample_bytree": 0.9,
+    "min_child_weight": 3,
+    "reg_lambda": 1.0,
+    "objective": "reg:squarederror",
+    "eval_metric": "rmse",
+    "random_state": 42,
+    "n_jobs": 4,
+    "tree_method": "hist"
+  },
+  "preprocessing": {
+    "categorical_features": [
+      "produce_type",
+      "storage_type"
+    ],
+    "categorical_encoder": "OneHotEncoder(handle_unknown='ignore', sparse_output=True)",
+    "numeric_features": [
+      "freshness_score",
+      "quality_score",
+      "defect_probability",
+      "temperature_c",
+      "humidity_rh",
+      "harvest_age_days"
+    ],
+    "numeric_transform": "passthrough; no scaling",
+    "preprocessor_fit_scope": "training rows only",
+    "transformed_feature_names": [
+      "categorical__produce_type_Apple",
+      "categorical__produce_type_Banana",
+      "categorical__produce_type_Brinjal",
+      "categorical__produce_type_Cabbage",
+      "categorical__produce_type_Capsicum",
+      "categorical__produce_type_Carrot",
+      "categorical__produce_type_Cauliflower",
+      "categorical__produce_type_Chilli",
+      "categorical__produce_type_Cucumber",
+      "categorical__produce_type_Garlic",
+      "categorical__produce_type_Ginger",
+      "categorical__produce_type_Grapes",
+      "categorical__produce_type_Guava",
+      "categorical__produce_type_Lemon",
+      "categorical__produce_type_Mango",
+      "categorical__produce_type_Okra",
+      "categorical__produce_type_Onion",
+      "categorical__produce_type_Orange",
+      "categorical__produce_type_Papaya",
+      "categorical__produce_type_Peas",
+      "categorical__produce_type_Pomegranate",
+      "categorical__produce_type_Potato",
+      "categorical__produce_type_Spinach",
+      "categorical__produce_type_Tomato",
+      "categorical__produce_type_Watermelon",
+      "categorical__storage_type_Cold Storage",
+      "categorical__storage_type_Controlled Atmosphere",
+      "categorical__storage_type_Open Market",
+      "categorical__storage_type_Refrigerated",
+      "categorical__storage_type_Room Temperature",
+      "numeric__freshness_score",
+      "numeric__quality_score",
+      "numeric__defect_probability",
+      "numeric__temperature_c",
+      "numeric__humidity_rh",
+      "numeric__harvest_age_days"
+    ]
+  },
+  "training_artifact_saved_timestamp_utc": "2026-09-25T17:08:16.192384+00:00"
+}

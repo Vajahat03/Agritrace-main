@@ -1,0 +1,45 @@
+{
+  "produce_type": {
+    "tomato": "tomato",
+    "Tomato": "tomato",
+    "Solanum lycopersicum": "tomato",
+    "banana": "banana",
+    "Banana": "banana",
+    "apple": "apple",
+    "Apple": "apple",
+    "orange": "orange",
+    "Orange": "orange",
+    "potato": "potato",
+    "onion": "onion",
+    "bell pepper": "bell_pepper",
+    "capsicum": "bell_pepper",
+    "guava": "guava",
+    "mango": "mango",
+    "carrot": "carrot",
+    "strawberry": "strawberry"
+  },
+  "freshness_score": {
+    "Fresh": 90.0,
+    "Semi-Fresh": 60.0,
+    "Semi Fresh": 60.0,
+    "Moderately Fresh": 60.0,
+    "Overripe": 30.0,
+    "Rotten": 5.0,
+    "Spoiled": 5.0
+  },
+  "storage_type": {
+    "ambient": "ambient",
+    "room temperature": "ambient",
+    "cold storage": "cold",
+    "refrigerated": "refrigerated",
+    "controlled atmosphere": "controlled",
+    "unknown": "unknown"
+  },
+  "target_policy": {
+    "measured": "directly documented shelf-life target",
+    "derived_longitudinal": "documented failure_day minus observation_day",
+    "approximate_range": "preserve min/max; do not create a point value",
+    "classification_only": "retain as auxiliary only",
+    "no_target": "retain as auxiliary only"
+  }
+}

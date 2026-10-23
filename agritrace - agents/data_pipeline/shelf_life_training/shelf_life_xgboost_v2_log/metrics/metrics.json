@@ -1,0 +1,872 @@
+{
+  "model": "shelf_life_xgboost_v2_log",
+  "target_transformation": "log1p",
+  "inverse_transformation": "expm1",
+  "test_rows": 7500,
+  "mae": 1.590907190402929,
+  "rmse": 2.795646968145232,
+  "r2": 0.9441983903452383,
+  "median_absolute_error": 0.8107388798813835,
+  "max_absolute_error": 38.11915958512364,
+  "within_0_5_days": 36.21333333333333,
+  "within_1_day": 56.946666666666665,
+  "within_2_days": 76.77333333333334,
+  "within_3_days": 85.58666666666667,
+  "overall": {
+    "count": 7500,
+    "mae": 1.590907190402929,
+    "rmse": 2.795646968145232,
+    "r2": 0.9441983903452383,
+    "median_absolute_error": 0.8107388798813835,
+    "maximum_absolute_error": 38.11915958512364,
+    "mean_actual": 8.788106666666666,
+    "mean_predicted": 8.432474850928104,
+    "mean_signed_error": -0.35563181573856295,
+    "within_percent": {
+      "0.5": 36.21333333333333,
+      "1": 56.946666666666665,
+      "2": 76.77333333333334,
+      "3": 85.58666666666667
+    }
+  },
+  "excluding_0_5_day": {
+    "count": 6187,
+    "mae": 1.7548253649592442,
+    "rmse": 3.012253073404204,
+    "r2": 0.9403492686906584,
+    "median_absolute_error": 0.9186781086746594,
+    "maximum_absolute_error": 38.11915958512364,
+    "mean_actual": 10.547001777921448,
+    "mean_predicted": 9.942231578710048,
+    "mean_signed_error": -0.6047701992113991,
+    "within_percent": {
+      "0.5": 31.937934378535637,
+      "1": 53.01438500080815,
+      "2": 73.81606594472281,
+      "3": 83.41684176499112
+    }
+  },
+  "0_5_day_group": {
+    "count": 1313,
+    "percentage_of_test": 17.506666666666668,
+    "percentage_of_full_dataset": 17.268,
+    "mae": 0.8185067745766359,
+    "rmse": 1.37392962844875,
+    "mean_actual": 0.5,
+    "mean_predicted": 1.3183355708162254,
+    "median_predicted": 0.9359913043686787,
+    "minimum_predicted": 0.45659687171591357,
+    "maximum_predicted": 17.66524354171652,
+    "mean_signed_error": 0.8183355708162253
+  },
+  "prediction_sanity": {
+    "minimum": 0.4274125394760689,
+    "maximum": 96.73844097210109,
+    "mean": 8.432474850928104,
+    "median": 3.768579276460354,
+    "count_below_0": 0,
+    "count_below_0_5": 8,
+    "count_below_1": 1438
+  },
+  "residual_summary": {
+    "count": 7500,
+    "mean_residual_prediction_minus_actual": -0.35563181573856295,
+    "median_residual": 0.014823358713763113,
+    "mae": 1.590907190402929,
+    "rmse": 2.795646968145232
+  },
+  "performance_by_target_range": [
+    {
+      "range": "exactly_0_5",
+      "count": 1313,
+      "mae": 0.8185067745766359,
+      "rmse": 1.37392962844875,
+      "r2": null,
+      "median_absolute_error": 0.4359913043686787,
+      "maximum_absolute_error": 17.16524354171652,
+      "mean_actual": 0.5,
+      "mean_predicted": 1.3183355708162254,
+      "mean_signed_error": 0.8183355708162253,
+      "within_percent": {
+        "0.5": 56.359482102056354,
+        "1": 75.47600913937548,
+        "2": 90.70830159939071,
+        "3": 95.8111195734958
+      }
+    },
+    {
+      "range": "gt_0_5_to_1",
+      "count": 497,
+      "mae": 0.5190935470290287,
+      "rmse": 0.9919689489902742,
+      "r2": -44.56011540489351,
+      "median_absolute_error": 0.2653551144022649,
+      "maximum_absolute_error": 10.614719870535794,
+      "mean_actual": 0.7559758551307847,
+      "mean_predicted": 1.2011164792402667,
+      "mean_signed_error": 0.44514062410948196,
+      "within_percent": {
+        "0.5": 73.03822937625755,
+        "1": 87.92756539235413,
+        "2": 94.56740442655935,
+        "3": 97.78672032193158
+      }
+    },
+    {
+      "range": "gt_1_to_2",
+      "count": 798,
+      "mae": 0.6145725201138315,
+      "rmse": 0.983689867667322,
+      "r2": -10.705261017825542,
+      "median_absolute_error": 0.4699598818585521,
+      "maximum_absolute_error": 11.454608700427345,
+      "mean_actual": 1.4811528822055138,
+      "mean_predicted": 1.4458387596586626,
+      "mean_signed_error": -0.03531412254685124,
+      "within_percent": {
+        "0.5": 52.5062656641604,
+        "1": 88.22055137844612,
+        "2": 96.99248120300751,
+        "3": 98.87218045112782
+      }
+    },
+    {
+      "range": "gt_2_to_5",
+      "count": 1415,
+      "mae": 1.0810307436233961,
+      "rmse": 1.530527865775384,
+      "r2": -2.004871076495421,
+      "median_absolute_error": 0.8675229501504744,
+      "maximum_absolute_error": 17.484490216551695,
+      "mean_actual": 3.391378091872791,
+      "mean_predicted": 3.0794235534963965,
+      "mean_signed_error": -0.3119545383763951,
+      "within_percent": {
+        "0.5": 31.59010600706714,
+        "1": 57.17314487632509,
+        "2": 87.13780918727915,
+        "3": 96.74911660777386
+      }
+    },
+    {
+      "range": "gt_5_to_10",
+      "count": 1436,
+      "mae": 1.5475779128788065,
+      "rmse": 2.292663855789427,
+      "r2": -1.684344993333296,
+      "median_absolute_error": 0.9308324855224801,
+      "maximum_absolute_error": 15.043833006978325,
+      "mean_actual": 7.16024373259053,
+      "mean_predicted": 6.5658011621066175,
+      "mean_signed_error": -0.5944425704839117,
+      "within_percent": {
+        "0.5": 29.735376044568245,
+        "1": 52.64623955431755,
+        "2": 75.27855153203342,
+        "3": 83.91364902506963
+      }
+    },
+    {
+      "range": "gt_10_to_20",
+      "count": 1016,
+      "mae": 2.42547970927048,
+      "rmse": 3.5591717690445184,
+      "r2": -0.503422663936262,
+      "median_absolute_error": 1.5483772910288973,
+      "maximum_absolute_error": 16.262639891871803,
+      "mean_actual": 14.065305118110235,
+      "mean_predicted": 13.202766540792434,
+      "mean_signed_error": -0.8625385773178035,
+      "within_percent": {
+        "0.5": 19.68503937007874,
+        "1": 34.05511811023622,
+        "2": 59.251968503937,
+        "3": 73.72047244094489
+      }
+    },
+    {
+      "range": "gt_20_to_40",
+      "count": 802,
+      "mae": 3.1985644785939975,
+      "rmse": 4.452432293326263,
+      "r2": 0.3336879826349275,
+      "median_absolute_error": 2.3595370855250977,
+      "maximum_absolute_error": 19.70473584102331,
+      "mean_actual": 27.927518703241894,
+      "mean_predicted": 26.793568804028133,
+      "mean_signed_error": -1.1339498992137593,
+      "within_percent": {
+        "0.5": 12.8428927680798,
+        "1": 24.3142144638404,
+        "2": 42.8927680798005,
+        "3": 59.725685785536164
+      }
+    },
+    {
+      "range": "gt_40",
+      "count": 223,
+      "mae": 5.9514335762615005,
+      "rmse": 8.268336581534685,
+      "r2": 0.582796808804265,
+      "median_absolute_error": 4.767068747026997,
+      "maximum_absolute_error": 38.11915958512364,
+      "mean_actual": 53.486502242152476,
+      "mean_predicted": 49.6570617660577,
+      "mean_signed_error": -3.82944047609476,
+      "within_percent": {
+        "0.5": 7.623318385650224,
+        "1": 14.798206278026907,
+        "2": 28.251121076233183,
+        "3": 37.66816143497758
+      }
+    }
+  ],
+  "residual_bias_by_produce_type": [
+    {
+      "category": "Apple",
+      "count": 259,
+      "mae": 2.328424900442956,
+      "mean_signed_error": -0.801332309957664,
+      "bias": "underprediction"
+    },
+    {
+      "category": "Banana",
+      "count": 310,
+      "mae": 0.5270940893052344,
+      "mean_signed_error": 0.0006172698280413852,
+      "bias": "overprediction"
+    },
+    {
+      "category": "Brinjal",
+      "count": 309,
+      "mae": 0.5685071699414498,
+      "mean_signed_error": 0.028458363250047837,
+      "bias": "overprediction"
+    },
+    {
+      "category": "Cabbage",
+      "count": 310,
+      "mae": 1.908723633934465,
+      "mean_signed_error": -0.585415414351932,
+      "bias": "underprediction"
+    },
+    {
+      "category": "Capsicum",
+      "count": 320,
+      "mae": 1.0374531715256237,
+      "mean_signed_error": -0.14239135202782666,
+      "bias": "underprediction"
+    },
+    {
+      "category": "Carrot",
+      "count": 312,
+      "mae": 1.5996819946458776,
+      "mean_signed_error": -0.567930472804599,
+      "bias": "underprediction"
+    },
+    {
+      "category": "Cauliflower",
+      "count": 296,
+      "mae": 0.8733973321961478,
+      "mean_signed_error": -0.18495486515751572,
+      "bias": "underprediction"
+    },
+    {
+      "category": "Chilli",
+      "count": 314,
+      "mae": 1.2524452954172718,
+      "mean_signed_error": -0.2375179843190412,
+      "bias": "underprediction"
+    },
+    {
+      "category": "Cucumber",
+      "count": 305,
+      "mae": 0.6884641283279095,
+      "mean_signed_error": 0.0028808652147026726,
+      "bias": "overprediction"
+    },
+    {
+      "category": "Garlic",
+      "count": 310,
+      "mae": 6.218716916659305,
+      "mean_signed_error": -2.178863205989788,
+      "bias": "underprediction"
+    },
+    {
+      "category": "Ginger",
+      "count": 315,
+      "mae": 3.7983772678637626,
+      "mean_signed_error": -0.6197774058042111,
+      "bias": "underprediction"
+    },
+    {
+      "category": "Grapes",
+      "count": 285,
+      "mae": 0.774130516819729,
+      "mean_signed_error": 0.07215510324527089,
+      "bias": "overprediction"
+    },
+    {
+      "category": "Guava",
+      "count": 265,
+      "mae": 0.6135468704842255,
+      "mean_signed_error": -0.023510397845400217,
+      "bias": "underprediction"
+    },
+    {
+      "category": "Lemon",
+      "count": 278,
+      "mae": 2.082840269624564,
+      "mean_signed_error": -0.42138920643643957,
+      "bias": "underprediction"
+    },
+    {
+      "category": "Mango",
+      "count": 287,
+      "mae": 0.5982844382681535,
+      "mean_signed_error": -0.02700330811596791,
+      "bias": "underprediction"
+    },
+    {
+      "category": "Okra",
+      "count": 297,
+      "mae": 0.5160473090704963,
+      "mean_signed_error": -0.037215846530897254,
+      "bias": "underprediction"
+    },
+    {
+      "category": "Onion",
+      "count": 310,
+      "mae": 3.6837531698605255,
+      "mean_signed_error": -1.0401412932796288,
+      "bias": "underprediction"
+    },
+    {
+      "category": "Orange",
+      "count": 306,
+      "mae": 1.7810280981557176,
+      "mean_signed_error": -0.10835632376740485,
+      "bias": "underprediction"
+    },
+    {
+      "category": "Papaya",
+      "count": 278,
+      "mae": 0.5487743316109824,
+      "mean_signed_error": -0.06091553414230113,
+      "bias": "underprediction"
+    },
+    {
+      "category": "Peas",
+      "count": 294,
+      "mae": 0.57581701338941,
+      "mean_signed_error": 0.08637624463232937,
+      "bias": "overprediction"
+    },
+    {
+      "category": "Pomegranate",
+      "count": 318,
+      "mae": 3.3452851042240863,
+      "mean_signed_error": -1.1408427330370636,
+      "bias": "underprediction"
+    },
+    {
+      "category": "Potato",
+      "count": 282,
+      "mae": 2.133963948300717,
+      "mean_signed_error": -0.7346902057014946,
+      "bias": "underprediction"
+    },
+    {
+      "category": "Spinach",
+      "count": 319,
+      "mae": 0.5133031294104221,
+      "mean_signed_error": -0.06195169606574214,
+      "bias": "underprediction"
+    },
+    {
+      "category": "Tomato",
+      "count": 332,
+      "mae": 0.528583512676219,
+      "mean_signed_error": 0.04977439212179853,
+      "bias": "overprediction"
+    },
+    {
+      "category": "Watermelon",
+      "count": 289,
+      "mae": 0.968781767214661,
+      "mean_signed_error": -0.08079568963633336,
+      "bias": "underprediction"
+    }
+  ],
+  "residual_bias_by_storage_type": [
+    {
+      "category": "Cold Storage",
+      "count": 1714,
+      "mae": 1.934437022412271,
+      "mean_signed_error": -0.42581557782549007,
+      "bias": "underprediction"
+    },
+    {
+      "category": "Controlled Atmosphere",
+      "count": 601,
+      "mae": 2.0508884953268716,
+      "mean_signed_error": -0.746900638295224,
+      "bias": "underprediction"
+    },
+    {
+      "category": "Open Market",
+      "count": 1120,
+      "mae": 1.004028142623317,
+      "mean_signed_error": -0.19939914841182527,
+      "bias": "underprediction"
+    },
+    {
+      "category": "Refrigerated",
+      "count": 1792,
+      "mae": 1.8700121561495269,
+      "mean_signed_error": -0.20427548332126536,
+      "bias": "underprediction"
+    },
+    {
+      "category": "Room Temperature",
+      "count": 2273,
+      "mae": 1.2793759711209058,
+      "mean_signed_error": -0.39556300998590005,
+      "bias": "underprediction"
+    }
+  ],
+  "residual_bias_by_target_range": [
+    {
+      "range": "exactly_0_5",
+      "count": 1313,
+      "mae": 0.8185067745766359,
+      "mean_signed_error": 0.8183355708162253,
+      "bias": "overprediction"
+    },
+    {
+      "range": "gt_0_5_to_1",
+      "count": 497,
+      "mae": 0.5190935470290287,
+      "mean_signed_error": 0.44514062410948196,
+      "bias": "overprediction"
+    },
+    {
+      "range": "gt_1_to_2",
+      "count": 798,
+      "mae": 0.6145725201138315,
+      "mean_signed_error": -0.03531412254685124,
+      "bias": "underprediction"
+    },
+    {
+      "range": "gt_2_to_5",
+      "count": 1415,
+      "mae": 1.0810307436233961,
+      "mean_signed_error": -0.3119545383763951,
+      "bias": "underprediction"
+    },
+    {
+      "range": "gt_5_to_10",
+      "count": 1436,
+      "mae": 1.5475779128788065,
+      "mean_signed_error": -0.5944425704839117,
+      "bias": "underprediction"
+    },
+    {
+      "range": "gt_10_to_20",
+      "count": 1016,
+      "mae": 2.42547970927048,
+      "mean_signed_error": -0.8625385773178035,
+      "bias": "underprediction"
+    },
+    {
+      "range": "gt_20_to_40",
+      "count": 802,
+      "mae": 3.1985644785939975,
+      "mean_signed_error": -1.1339498992137593,
+      "bias": "underprediction"
+    },
+    {
+      "range": "gt_40",
+      "count": 223,
+      "mae": 5.9514335762615005,
+      "mean_signed_error": -3.82944047609476,
+      "bias": "underprediction"
+    }
+  ],
+  "numeric_feature_target_correlations_full_dataset": {
+    "freshness_score": {
+      "pearson": 0.36571422664772973,
+      "spearman": 0.5013866066017527
+    },
+    "quality_score": {
+      "pearson": 0.28950255487921916,
+      "spearman": 0.447509581681309
+    },
+    "defect_probability": {
+      "pearson": -0.6226989334382366,
+      "spearman": -0.7726673023349165
+    },
+    "temperature_c": {
+      "pearson": -0.5258168177693565,
+      "spearman": -0.6836108686449975
+    },
+    "humidity_rh": {
+      "pearson": 0.5279146967767654,
+      "spearman": 0.6986470681433806
+    },
+    "harvest_age_days": {
+      "pearson": -0.1380841345791341,
+      "spearman": -0.14241778217044757
+    }
+  },
+  "feature_importance": {
+    "importance_type": "gain; descriptive, not causal",
+    "top_transformed_features": [
+      {
+        "feature": "numeric__temperature_c",
+        "gain": 18.836341857910156
+      },
+      {
+        "feature": "categorical__produce_type_Spinach",
+        "gain": 18.4133358001709
+      },
+      {
+        "feature": "categorical__produce_type_Garlic",
+        "gain": 16.650022506713867
+      },
+      {
+        "feature": "categorical__produce_type_Onion",
+        "gain": 14.305147171020508
+      },
+      {
+        "feature": "categorical__produce_type_Ginger",
+        "gain": 12.509842872619629
+      },
+      {
+        "feature": "categorical__produce_type_Okra",
+        "gain": 12.25798225402832
+      },
+      {
+        "feature": "categorical__produce_type_Tomato",
+        "gain": 10.866767883300781
+      },
+      {
+        "feature": "categorical__produce_type_Brinjal",
+        "gain": 10.282027244567871
+      },
+      {
+        "feature": "categorical__produce_type_Guava",
+        "gain": 9.220207214355469
+      },
+      {
+        "feature": "categorical__produce_type_Cabbage",
+        "gain": 7.238467693328857
+      },
+      {
+        "feature": "numeric__defect_probability",
+        "gain": 7.23751974105835
+      },
+      {
+        "feature": "categorical__produce_type_Pomegranate",
+        "gain": 7.204805374145508
+      },
+      {
+        "feature": "categorical__produce_type_Lemon",
+        "gain": 6.580360412597656
+      },
+      {
+        "feature": "categorical__produce_type_Banana",
+        "gain": 6.3287553787231445
+      },
+      {
+        "feature": "categorical__storage_type_Refrigerated",
+        "gain": 6.239483833312988
+      },
+      {
+        "feature": "categorical__produce_type_Potato",
+        "gain": 5.668107509613037
+      },
+      {
+        "feature": "categorical__storage_type_Controlled Atmosphere",
+        "gain": 5.608927249908447
+      },
+      {
+        "feature": "categorical__produce_type_Papaya",
+        "gain": 4.549844264984131
+      },
+      {
+        "feature": "categorical__produce_type_Apple",
+        "gain": 3.7466483116149902
+      },
+      {
+        "feature": "numeric__humidity_rh",
+        "gain": 3.2746880054473877
+      },
+      {
+        "feature": "categorical__produce_type_Mango",
+        "gain": 2.728532075881958
+      },
+      {
+        "feature": "categorical__produce_type_Orange",
+        "gain": 2.4159953594207764
+      },
+      {
+        "feature": "categorical__produce_type_Chilli",
+        "gain": 2.154127836227417
+      },
+      {
+        "feature": "categorical__produce_type_Carrot",
+        "gain": 1.5883983373641968
+      },
+      {
+        "feature": "categorical__produce_type_Cauliflower",
+        "gain": 1.5100915431976318
+      }
+    ],
+    "aggregated_logical_features": [
+      {
+        "feature": "produce_type",
+        "gain": 159.63289487361908,
+        "gain_share": 0.7729458733778752
+      },
+      {
+        "feature": "temperature_c",
+        "gain": 18.836341857910156,
+        "gain_share": 0.0912059680439504
+      },
+      {
+        "feature": "storage_type",
+        "gain": 14.340253442525864,
+        "gain_share": 0.06943581227646468
+      },
+      {
+        "feature": "defect_probability",
+        "gain": 7.23751974105835,
+        "gain_share": 0.035044224573956895
+      },
+      {
+        "feature": "humidity_rh",
+        "gain": 3.2746880054473877,
+        "gain_share": 0.015856108995670932
+      },
+      {
+        "feature": "freshness_score",
+        "gain": 1.3102126121520996,
+        "gain_share": 0.006344077344537179
+      },
+      {
+        "feature": "quality_score",
+        "gain": 1.218529462814331,
+        "gain_share": 0.005900145584764106
+      },
+      {
+        "feature": "harvest_age_days",
+        "gain": 0.6748813390731812,
+        "gain_share": 0.0032677898027805375
+      }
+    ]
+  },
+  "v1_comparison": {
+    "V1": {
+      "count": 7500,
+      "mae": 1.5703231511376101,
+      "rmse": 2.631259444435344,
+      "r2": 0.9505678597519449,
+      "median_absolute_error": 0.8389102220535279,
+      "maximum_absolute_error": 23.585469818115236,
+      "mean_actual": 8.788106666666666,
+      "mean_predicted": 8.762129143871366,
+      "mean_signed_error": -0.025977522795299697,
+      "within_percent": {
+        "0.5": 34.14666666666666,
+        "1": 55.52,
+        "2": 76.25333333333333,
+        "3": 85.74666666666667
+      }
+    },
+    "V2-Log": {
+      "count": 7500,
+      "mae": 1.590907190402929,
+      "rmse": 2.795646968145232,
+      "r2": 0.9441983903452383,
+      "median_absolute_error": 0.8107388798813835,
+      "maximum_absolute_error": 38.11915958512364,
+      "mean_actual": 8.788106666666666,
+      "mean_predicted": 8.432474850928104,
+      "mean_signed_error": -0.35563181573856295,
+      "within_percent": {
+        "0.5": 36.21333333333333,
+        "1": 56.946666666666665,
+        "2": 76.77333333333334,
+        "3": 85.58666666666667
+      }
+    },
+    "delta_V2_Log_minus_V1": {
+      "mae": 0.020584039265318932,
+      "rmse": 0.16438752370988796,
+      "r2": -0.006369469406706574,
+      "median_absolute_error": -0.028171342172144453,
+      "maximum_absolute_error": 14.533689767008404
+    },
+    "within_threshold_percentage": {
+      "0.5": {
+        "V1": 34.14666666666666,
+        "V2-Log": 36.21333333333333
+      },
+      "1": {
+        "V1": 55.52,
+        "V2-Log": 56.946666666666665
+      },
+      "2": {
+        "V1": 76.25333333333333,
+        "V2-Log": 76.77333333333334
+      },
+      "3": {
+        "V1": 85.74666666666667,
+        "V2-Log": 85.58666666666667
+      }
+    },
+    "same_test_row_indices": true,
+    "same_test_rows": 7500
+  },
+  "test_examples": [
+    {
+      "produce_type": "Watermelon",
+      "freshness_score": 81.19,
+      "quality_score": 90.93,
+      "defect_probability": 0.511,
+      "temperature_c": 1.46,
+      "humidity_rh": 98.0,
+      "harvest_age_days": 3.94,
+      "storage_type": "Controlled Atmosphere",
+      "actual_days": 11.49,
+      "predicted_days": 10.255696513194389,
+      "absolute_error_days": 1.2343034868056115
+    },
+    {
+      "produce_type": "Tomato",
+      "freshness_score": 91.45,
+      "quality_score": 87.93,
+      "defect_probability": 0.4031,
+      "temperature_c": 5.56,
+      "humidity_rh": 84.78,
+      "harvest_age_days": 0.72,
+      "storage_type": "Refrigerated",
+      "actual_days": 6.17,
+      "predicted_days": 6.673870023752953,
+      "absolute_error_days": 0.5038700237529534
+    },
+    {
+      "produce_type": "Tomato",
+      "freshness_score": 71.21,
+      "quality_score": 64.96,
+      "defect_probability": 0.6064,
+      "temperature_c": 24.42,
+      "humidity_rh": 35.0,
+      "harvest_age_days": 2.76,
+      "storage_type": "Room Temperature",
+      "actual_days": 0.5,
+      "predicted_days": 0.7694944956577119,
+      "absolute_error_days": 0.2694944956577119
+    },
+    {
+      "produce_type": "Pomegranate",
+      "freshness_score": 53.1,
+      "quality_score": 58.38,
+      "defect_probability": 0.5746,
+      "temperature_c": 2.11,
+      "humidity_rh": 88.32,
+      "harvest_age_days": 11.24,
+      "storage_type": "Cold Storage",
+      "actual_days": 7.62,
+      "predicted_days": 7.378245164225497,
+      "absolute_error_days": 0.24175483577450319
+    },
+    {
+      "produce_type": "Grapes",
+      "freshness_score": 66.68,
+      "quality_score": 75.62,
+      "defect_probability": 0.7222,
+      "temperature_c": 26.75,
+      "humidity_rh": 40.29,
+      "harvest_age_days": 4.77,
+      "storage_type": "Room Temperature",
+      "actual_days": 0.7,
+      "predicted_days": 0.7843160257097341,
+      "absolute_error_days": 0.08431602570973418
+    },
+    {
+      "produce_type": "Grapes",
+      "freshness_score": 67.0,
+      "quality_score": 68.21,
+      "defect_probability": 0.6359,
+      "temperature_c": 25.94,
+      "humidity_rh": 41.68,
+      "harvest_age_days": 1.84,
+      "storage_type": "Room Temperature",
+      "actual_days": 1.84,
+      "predicted_days": 1.264068076441896,
+      "absolute_error_days": 0.5759319235581042
+    },
+    {
+      "produce_type": "Spinach",
+      "freshness_score": 78.81,
+      "quality_score": 77.07,
+      "defect_probability": 0.6275,
+      "temperature_c": 23.18,
+      "humidity_rh": 47.46,
+      "harvest_age_days": 2.07,
+      "storage_type": "Room Temperature",
+      "actual_days": 0.71,
+      "predicted_days": 0.8659026021372513,
+      "absolute_error_days": 0.15590260213725138
+    },
+    {
+      "produce_type": "Guava",
+      "freshness_score": 75.73,
+      "quality_score": 84.8,
+      "defect_probability": 0.5622,
+      "temperature_c": 3.67,
+      "humidity_rh": 73.87,
+      "harvest_age_days": 4.76,
+      "storage_type": "Refrigerated",
+      "actual_days": 2.99,
+      "predicted_days": 3.191252481650663,
+      "absolute_error_days": 0.20125248165066267
+    },
+    {
+      "produce_type": "Banana",
+      "freshness_score": 45.0,
+      "quality_score": 58.07,
+      "defect_probability": 0.8514,
+      "temperature_c": 25.73,
+      "humidity_rh": 55.98,
+      "harvest_age_days": 9.4,
+      "storage_type": "Room Temperature",
+      "actual_days": 0.5,
+      "predicted_days": 0.6554520221109086,
+      "absolute_error_days": 0.15545202211090858
+    },
+    {
+      "produce_type": "Spinach",
+      "freshness_score": 65.3,
+      "quality_score": 63.45,
+      "defect_probability": 0.7347,
+      "temperature_c": 21.21,
+      "humidity_rh": 39.62,
+      "harvest_age_days": 4.52,
+      "storage_type": "Room Temperature",
+      "actual_days": 0.5,
+      "predicted_days": 0.7948242647581523,
+      "absolute_error_days": 0.29482426475815227
+    }
+  ],
+  "limitations": [
+    "Dataset provenance is undocumented; labels have not been independently validated against measured real-world shelf life.",
+    "The 8,634-row exact 0.5-day mass and its unknown origin remain limitations.",
+    "All 50,000 predictor vectors are unique; repeated-vector target consistency cannot be assessed.",
+    "Synthetic/formula-generated structure is possible but unproven.",
+    "A random row split may overestimate generalization when hidden groups or generation rules are shared.",
+    "Feature correlations are associations and do not establish causality."
+  ]
+}

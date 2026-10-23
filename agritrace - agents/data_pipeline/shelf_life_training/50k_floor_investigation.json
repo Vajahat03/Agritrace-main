@@ -1,0 +1,111 @@
+{
+  "split": {
+    "seed": 42,
+    "train": 40000,
+    "test": 10000
+  },
+  "floor_classification": {
+    "Random Forest classifier": {
+      "roc_auc": 0.8835763595526152,
+      "average_precision": 0.5136560080445582,
+      "accuracy_at_0_5": 0.8352,
+      "precision_at_0_5": 0.5409836065573771,
+      "recall_at_0_5": 0.34177215189873417,
+      "confusion_matrix_tn_fp_fn_tp": [
+        7758,
+        504,
+        1144,
+        594
+      ],
+      "predicted_probability_floor_rows": {
+        "count": 1738,
+        "min": 0.005,
+        "q25": 0.32,
+        "median": 0.435,
+        "q75": 0.54,
+        "max": 0.885,
+        "mean": 0.42899884925201376
+      },
+      "predicted_probability_nonfloor_rows": {
+        "count": 8262,
+        "min": 0.0,
+        "q25": 0.0,
+        "median": 0.0,
+        "q75": 0.215,
+        "max": 0.84,
+        "mean": 0.11820685064149117
+      }
+    },
+    "XGBoost classifier": {
+      "roc_auc": 0.8863461564710842,
+      "average_precision": 0.5252695869884445,
+      "accuracy_at_0_5": 0.8359,
+      "precision_at_0_5": 0.5454545454545454,
+      "recall_at_0_5": 0.334867663981588,
+      "confusion_matrix_tn_fp_fn_tp": [
+        7777,
+        485,
+        1156,
+        582
+      ],
+      "predicted_probability_floor_rows": {
+        "count": 1738,
+        "min": 0.0014556512469425797,
+        "q25": 0.3183879256248474,
+        "median": 0.44244980812072754,
+        "q75": 0.5405481457710266,
+        "max": 0.9145500659942627,
+        "mean": 0.4270879924297333
+      },
+      "predicted_probability_nonfloor_rows": {
+        "count": 8262,
+        "min": 1.117957344831666e-05,
+        "q25": 9.406261233380064e-05,
+        "median": 0.000544580165296793,
+        "q75": 0.19811736047267914,
+        "max": 0.8400704264640808,
+        "mean": 0.11424008011817932
+      }
+    }
+  },
+  "regression_fit_above_floor_only": {
+    "Random Forest trained above floor": {
+      "fit_rows_above_floor": 33104,
+      "holdout_nonfloor_rows": 8262,
+      "holdout_floor_rows": 1738,
+      "nonfloor_test_mae": 1.6761351307189545,
+      "nonfloor_test_rmse": 2.815434762239673,
+      "nonfloor_test_r2": 0.9479017351860756,
+      "floor_row_unclipped_predictions": {
+        "count": 1738,
+        "min": 0.8283000000000018,
+        "q25": 1.1506500000000002,
+        "median": 1.4171250000000004,
+        "q75": 2.6241875,
+        "max": 25.94590000000003,
+        "mean": 2.2604696202531644
+      },
+      "floor_rows_predicted_le_0_5": 0,
+      "floor_rows_predicted_le_0_5_percent": 0.0
+    },
+    "XGBoost trained above floor": {
+      "fit_rows_above_floor": 33104,
+      "holdout_nonfloor_rows": 8262,
+      "holdout_floor_rows": 1738,
+      "nonfloor_test_mae": 1.6315114228947925,
+      "nonfloor_test_rmse": 2.687291698065093,
+      "nonfloor_test_r2": 0.9525362614871697,
+      "floor_row_unclipped_predictions": {
+        "count": 1738,
+        "min": 0.12357976287603378,
+        "q25": 1.1195147037506104,
+        "median": 1.3535776138305664,
+        "q75": 2.690638303756714,
+        "max": 21.259597778320312,
+        "mean": 2.208890199661255
+      },
+      "floor_rows_predicted_le_0_5": 1,
+      "floor_rows_predicted_le_0_5_percent": 0.05753739930955121
+    }
+  }
+}

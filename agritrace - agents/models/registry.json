@@ -1,0 +1,37 @@
+{
+  "AgriTrace_Vision_D121": {
+    "model_name": "AgriTrace Vision-D121",
+    "version": "1.0.0",
+    "backbone": "DenseNet-121",
+    "training_dataset": "AgriTrace Multi-Dataset Benchmark (AgriFreshNET, FruitNet, Banana/Guava Quality)",
+    "agritrace_dataset_version": "AgriTrace-Real-v1.0.0",
+    "training_date": "2026-09-05T18:08:24Z",
+    "evaluation_date": "2026-09-05T19:41:04Z",
+    "test_split_samples": 4873,
+    "synthetic_images_used": 0,
+    "metrics": {
+      "produce_top1_accuracy": "96.12%",
+      "produce_macro_f1": 0.956,
+      "freshness_4class_accuracy": "91.76%",
+      "freshness_macro_f1": 0.865,
+      "freshness_ordinal_mace": 0.140,
+      "quality_mae": "7.17 / 100",
+      "quality_rmse": "11.48",
+      "quality_r2": 0.866,
+      "defect_accuracy": "100.0% (on annotated defect subset)",
+      "defect_macro_f1": 1.0,
+      "calibrated_ece": 0.0165,
+      "uncalibrated_ece": 0.0295,
+      "ood_auroc": 0.6001
+    },
+    "robustness": {
+      "gaussian_blur_acc": "93.3%",
+      "low_brightness_acc": "96.7%",
+      "high_brightness_acc": "90.0%",
+      "low_contrast_acc": "96.7%"
+    },
+    "checkpoint": "models/vision/agritrace_vision_d121_best.pt",
+    "calibration": "Temperature Scaling (T=0.870, fitted on validation split)",
+    "git_commit": "HEAD"
+  }
+}

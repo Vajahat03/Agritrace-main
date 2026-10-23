@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: agritrace-backend
+    runtime: node
+    rootDir: backend
+    buildCommand: npm ci --include=dev && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/v1/health
+    envVars:
+      - key: AI_SERVICE_URL
+        value: https://agritrace-ai-yw5s.onrender.com
+      - key: DEMO_MODE
+        value: "true"
+
+  - type: web
+    name: agritrace-ai
+    runtime: python
+    rootDir: agritrace - agents
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn backend.app:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/health

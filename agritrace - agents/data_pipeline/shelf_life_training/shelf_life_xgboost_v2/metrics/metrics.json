@@ -1,0 +1,99 @@
+{
+  "overall": {
+    "mae": 0.0,
+    "rmse": 0.0,
+    "r2": null
+  },
+  "target_variance_test": 0.0,
+  "test_prediction_range": {
+    "min": 1.0,
+    "max": 1.0,
+    "mean": 1.0,
+    "unique_predictions": 1
+  },
+  "split_counts": {
+    "train": 34999,
+    "validation": 7501,
+    "test": 7500
+  },
+  "target_distribution": {
+    "minimum": 1.0,
+    "maximum": 1.0,
+    "unique_values": 1,
+    "rows_below_1": 0
+  },
+  "transformation": {
+    "rule": "targets < 0.5 -> 0.0; targets >= 0.5 -> 1.0 (exact 0.5 follows the original instruction to convert it to 1.0)",
+    "original_rows": 50000,
+    "derived_rows": 50000,
+    "original_columns": 9,
+    "derived_columns": 9,
+    "original_exact_0_5_rows": 8634,
+    "original_greater_than_0_5_rows": 41366,
+    "original_less_than_0_5_rows": 0,
+    "original_1_0_rows": 48,
+    "derived_exact_0_5_rows": 0,
+    "derived_1_0_rows": 50000,
+    "derived_min_target": 1.0,
+    "derived_rows_below_1_0": 0,
+    "predictor_values_changed": 0,
+    "target_values_changed": 49952,
+    "exact_0_5_rows_changed_to_1_0": 8634,
+    "non_0_5_rows_also_changed_under_clarified_rule": 41318,
+    "original_sha256_before_and_after": "d30663ca50d45c40025f61aa8fa925ae3d68e714a1c1a143543ef74c4b67f1af",
+    "derived_sha256": "7b9f77481cdf2223fd544de9d330ec458869bcdbed912fa7ebbd6a0ad95f9242"
+  },
+  "interpretation": "The selected user recode collapses this dataset to one constant target value. The resulting XGBoost artifact is a technically trained constant-target regressor and has no meaningful shelf-life regression signal; test R2 is undefined because test-target variance is zero.",
+  "10_test_examples": [
+    {
+      "actual": 1.0,
+      "predicted": 1.0,
+      "absolute_error": 0.0
+    },
+    {
+      "actual": 1.0,
+      "predicted": 1.0,
+      "absolute_error": 0.0
+    },
+    {
+      "actual": 1.0,
+      "predicted": 1.0,
+      "absolute_error": 0.0
+    },
+    {
+      "actual": 1.0,
+      "predicted": 1.0,
+      "absolute_error": 0.0
+    },
+    {
+      "actual": 1.0,
+      "predicted": 1.0,
+      "absolute_error": 0.0
+    },
+    {
+      "actual": 1.0,
+      "predicted": 1.0,
+      "absolute_error": 0.0
+    },
+    {
+      "actual": 1.0,
+      "predicted": 1.0,
+      "absolute_error": 0.0
+    },
+    {
+      "actual": 1.0,
+      "predicted": 1.0,
+      "absolute_error": 0.0
+    },
+    {
+      "actual": 1.0,
+      "predicted": 1.0,
+      "absolute_error": 0.0
+    },
+    {
+      "actual": 1.0,
+      "predicted": 1.0,
+      "absolute_error": 0.0
+    }
+  ]
+}
