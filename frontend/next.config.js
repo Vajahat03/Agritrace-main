@@ -11,7 +11,7 @@ const nextConfig = {
   },
   env: {
     NEXT_PUBLIC_API_URL:
-      process.env.NEXT_PUBLIC_API_URL || 'https://agritrace-backend-m0g1.onrender.com/api/v1',
+      process.env.NEXT_PUBLIC_API_URL || 'https://agritrace-new-backend.onrender.com/api/v1',
     NEXT_PUBLIC_SUPABASE_URL:
       process.env.NEXT_PUBLIC_SUPABASE_URL ||
       'https://zisvaplfxnpvxbfdsmyy.supabase.co',

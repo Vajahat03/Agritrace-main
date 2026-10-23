@@ -6,7 +6,8 @@ import { getCurrentUserIdToken } from './firebaseClient';
  * Uses environment variable NEXT_PUBLIC_API_URL or defaults to local backend.
  * Stale Render deployment fallbacks and hardcoded credentials have been removed.
  */
-const API_BASE_URL = (process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api/v1').replace(/\/$/, '');
+const rawApiUrl = (process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api/v1').trim().replace(/\/+$/, '');
+const API_BASE_URL = rawApiUrl.endsWith('/api/v1') ? rawApiUrl : `${rawApiUrl}/api/v1`;
 
 export interface AgriTraceApiError extends Error {
   isBackendDisconnected?: boolean;
